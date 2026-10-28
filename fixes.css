@@ -1,0 +1,1021 @@
+.hero-visual{height:100%;background-size:cover;background-position:center 40%;background-repeat:no-repeat;display:none}.hero-photo{display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;filter:brightness(.48)}.hero-visual::before{display:none}.hero{background-color:#282828;background-size:cover;background-position:center 40%;background-repeat:no-repeat}.hero-copy{z-index:2}.photo-caption,.hero-stamp{z-index:2}.hero h1,.hero-description{visibility:visible;opacity:1;color:#fff}
+.map-card{min-height:320px;padding:45px 9%;display:flex;align-items:center;justify-content:center;text-align:center;background-color:#f5f4ef;background-image:linear-gradient(45deg,#e9e7df 25%,transparent 25%),linear-gradient(-45deg,#e9e7df 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#e9e7df 75%),linear-gradient(-45deg,transparent 75%,#e9e7df 75%);background-size:24px 24px;background-position:0 0,0 12px,12px -12px,-12px 0}.map-card>div{max-width:630px;padding:28px 35px;border-radius:10px;background:#fff;box-shadow:0 4px 28px #1112}.map-card h2{font-size:28px;margin:0 0 10px}.map-card p:not(.eyebrow){font-size:14px;line-height:1.7;color:#666;margin:0 auto 20px}.map-card .eyebrow{margin:0 0 8px}@media(max-width:640px){.map-card{min-height:280px;padding:25px 7%}.map-card>div{padding:25px 18px}.map-card h2{font-size:23px}}
+
+/* Contact page refinements, scoped so other pages keep their existing layout. */
+.contact-screen .contact-page{grid-template-columns:.9fr 1.1fr;gap:6%;align-items:start}
+.contact-screen .contact-page{--font-heading:'Poppins',Arial,sans-serif;--font-body:'Poppins',Arial,sans-serif}
+.contact-screen .contact-page :is(h1,h2,p,label,input,textarea,button),
+.contact-screen .contact-page a:not(.social-icon){color:#000}
+.contact-screen .contact-page input::placeholder,
+.contact-screen .contact-page textarea::placeholder{color:#000;opacity:1}
+.contact-screen .contact-info{gap:0}
+.contact-screen .contact-intro{padding-bottom:18px;border-bottom:1px solid #e7e2da;margin-bottom:2px}
+.contact-screen .contact-intro .eyebrow{margin:0 0 18px;font-family:var(--font-heading);font-size:17px;font-style:italic;letter-spacing:.02em;text-transform:none;color:#b99b42!important}
+.contact-screen .contact-intro h1{margin:0 0 20px;font-family:var(--font-heading);font-size:clamp(34px,3.1vw,40px);font-weight:700;line-height:1.05;letter-spacing:-.035em;color:#171515}
+.contact-screen .contact-intro>p:last-child{margin:0;font-size:16px;line-height:1.65;color:#292929}
+.contact-screen .contact-title-break{display:none}
+.contact-screen .contact-info article{display:flex;align-items:flex-start;gap:17px;padding:20px 6px;background:transparent;border-radius:0;box-shadow:none;border-bottom:1px solid #e7e2da}
+.contact-screen .contact-info article:first-of-type{border-top:1px solid #e7e2da}
+.contact-screen .contact-info article .service-icon{flex:0 0 44px;width:44px;height:44px;margin:0;border-radius:50%;display:grid;place-items:center;background:#b6a52d;color:#fff;font-size:18px}
+.contact-screen .contact-info article .service-icon svg{display:block;width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.contact-screen .contact-info article>div{min-width:0}
+.contact-screen .contact-info h2,.contact-screen .contact-form h2{font-size:20px;line-height:1.35;margin:0 0 7px}
+.contact-screen .contact-info p,.contact-screen .contact-form>p:not(.eyebrow){font-size:13px;line-height:1.7;color:#666}
+.contact-screen .contact-info p{margin:0 0 7px}
+.contact-screen .contact-info a:not(.social-icon){font-size:12px;color:#8f8122}
+.contact-screen .contact-info .social-card{display:block;text-align:center;padding:28px 6px 22px;border-bottom:0}
+.contact-screen .social-card h2{margin-bottom:16px}
+.contact-screen .social-links{justify-content:center;gap:12px}
+.contact-screen .social-icon{width:38px;height:38px;display:grid;place-items:center;border-radius:7px;background:#b6a52d;color:#fff;transition:transform .18s,background-color .18s}
+.contact-screen .social-icon:hover{background:#8f8122;transform:translateY(-2px)}
+.contact-screen .social-icon svg{width:18px;height:18px;fill:currentColor}
+.contact-screen .contact-form{padding:46px 48px;border-radius:26px;background:#fff;box-shadow:0 10px 34px #1112}
+.contact-screen .contact-form .eyebrow{margin-bottom:12px;font-style:italic;text-transform:none;letter-spacing:0}
+.contact-screen .contact-form h2{font-size:clamp(29px,3vw,40px);margin-bottom:12px}
+.contact-screen .contact-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 10px}
+.contact-screen .contact-fields label{display:block;margin-top:14px;font-size:12px;font-weight:600}
+.contact-screen .contact-fields .field-wide{grid-column:1/-1}
+.contact-screen .contact-form input,.contact-screen .contact-form textarea{display:block;width:100%;margin-top:7px;padding:12px 13px;border:1px solid #e6e1d9;border-radius:5px;background:#faf9f6;color:var(--ink);font:inherit;font-size:13px}
+.contact-screen .contact-form textarea{resize:vertical;min-height:120px}
+.contact-screen .contact-form input:focus,.contact-screen .contact-form textarea:focus{outline:2px solid #b6a52d;outline-offset:1px}
+.contact-screen .contact-form button{margin-top:18px;border:0;cursor:pointer;background:#b6a52d;color:#fff;border-radius:5px;justify-content:center;width:100%;font-weight:700}
+.contact-screen .contact-form button:hover{background:#8f8122}
+.contact-screen .contact-map{position:relative;width:calc(100% - 40px);max-width:1260px;height:500px;margin:70px auto 0;overflow:hidden;border-radius:14px;background:#e9e7df}
+.contact-screen .contact-map iframe{display:block;width:100%;height:100%;border:0}
+.contact-screen .mobile-booking{display:none}
+.contact-screen .whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:20;width:58px;height:58px;display:grid;place-items:center;border-radius:50%;background:#20c66b;color:white;box-shadow:0 3px 14px #0003;transition:transform .18s,background-color .18s}
+.contact-screen .whatsapp-float:hover{background:#159d51;transform:translateY(-2px)}
+.contact-screen .whatsapp-float svg{width:34px;height:34px;fill:currentColor}
+@media(max-width:900px){.contact-screen .contact-page{grid-template-columns:1fr;gap:30px;padding-top:48px}.contact-screen .contact-info{display:grid;grid-template-columns:1fr 1fr;column-gap:28px}.contact-screen .contact-intro,.contact-screen .contact-info .social-card{grid-column:1/-1}.contact-screen .contact-form{max-width:none}.contact-screen .contact-map{height:400px;margin-top:50px}}
+@media(max-width:640px){.contact-screen .contact-page{padding:42px 7% 56px;gap:18px}.contact-screen .contact-info{display:block}.contact-screen .contact-info article{padding:17px 2px;gap:13px}.contact-screen .contact-info article .service-icon{flex-basis:40px;width:40px;height:40px}.contact-screen .contact-info h2{font-size:16px}.contact-screen .contact-info p{font-size:12px}.contact-screen .contact-info .social-card{padding:23px 0 18px}.contact-screen .contact-intro h1{font-size:34px}.contact-screen .contact-intro>p:last-child{font-size:15px}.contact-screen .contact-form{padding:28px 23px;border-radius:18px}.contact-screen .contact-form h2{font-size:31px}.contact-screen .contact-form>p:not(.eyebrow){font-size:13px}.contact-screen .contact-fields{grid-template-columns:1fr;gap:4px}.contact-screen .contact-fields .field-wide{grid-column:auto}.contact-screen .contact-map{width:calc(100% - 24px);height:300px;margin-top:36px;border-radius:10px}.contact-screen .whatsapp-float{right:16px;bottom:16px;width:54px;height:54px}.contact-screen .whatsapp-float svg{width:31px;height:31px}}
+@media(max-width:640px){.contact-screen .contact-info article>div p,.contact-screen .contact-info article>div a:not(.social-icon){font-size:13px}}
+@media(max-width:640px){.contact-screen .contact-info article:not(.social-card){align-items:center}.contact-screen .contact-form{padding:28px 23px 88px}.contact-screen .whatsapp-widget{right:8px;bottom:8px}}
+@media(max-width:640px){
+  .contact-screen .contact-page{padding-left:4%;padding-right:4%}
+  .contact-screen .contact-intro .eyebrow{margin-bottom:12px}
+  .contact-screen .contact-title-break{display:block}
+  .contact-screen .contact-intro h1{font-size:clamp(26px,7.2vw,28px);line-height:1.12;letter-spacing:-.04em;margin-bottom:14px}
+  .contact-screen .contact-intro{padding-bottom:16px}
+  .contact-screen .contact-info article:not(.social-card){padding:14px 2px}
+  .contact-screen .contact-form{padding:24px 20px 88px;border-radius:18px}
+  .contact-screen .contact-form h2{font-size:28px;line-height:1.16;margin-bottom:10px}
+  .contact-screen .contact-form>p:not(.eyebrow){font-size:13px;line-height:1.55;margin:0 0 12px}
+  .contact-screen .contact-fields{gap:6px}
+  .contact-screen .contact-fields label{margin-top:10px}
+  .contact-screen .contact-form input,.contact-screen .contact-form textarea{padding:11px 12px}
+  .contact-screen .contact-form textarea{min-height:100px}
+  .contact-screen .contact-form button{margin-top:14px;min-height:48px}
+}
+
+/* Tablet: balance the service cards and center the final card and divider. */
+@media (min-width: 641px) and (max-width: 1000px) {
+  body.services-page .services-overview-rule {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body.services-page .service-detail-grid {
+    align-items: stretch;
+  }
+  body.services-page .service-detail-grid article {
+    height: 100%;
+  }
+  body.services-page .service-detail-grid article:nth-child(4) {
+    grid-column: 2;
+  }
+  body.services-page .service-detail-grid article p {
+    flex: 1 1 auto;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1100px) and (orientation: landscape) {
+  body.services-page .services-overview {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    padding: 42px 4% 48px;
+  }
+  body.services-page .services-overview-copy {
+    max-width: 860px;
+    margin: 0 auto;
+    padding-top: 0;
+    text-align: center;
+  }
+  body.services-page .services-overview-copy .eyebrow {
+    margin-bottom: 12px;
+  }
+  body.services-page .services-overview-copy h1 {
+    max-width: 820px;
+    margin: 0 auto 14px;
+    font-size: 36px;
+    line-height: 1.12;
+  }
+  body.services-page .services-overview-copy > p:not(.eyebrow) {
+    max-width: 820px;
+    margin: 0 auto 10px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  body.services-page .services-overview-rule {
+    margin: 18px auto 0;
+  }
+  body.services-page .service-detail-grid {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 12px;
+    padding: 14px;
+  }
+  body.services-page .service-detail-grid article,
+  body.services-page .service-detail-grid article:nth-child(4) {
+    grid-column: auto;
+    height: 100%;
+    padding: 18px 10px 16px;
+  }
+  body.services-page .service-detail-grid .service-icon {
+    margin-bottom: 8px;
+  }
+  body.services-page .service-detail-grid h2 {
+    margin-bottom: 10px;
+    font-size: 17px;
+    line-height: 1.2;
+  }
+  body.services-page .service-detail-grid p {
+    flex: 1 1 auto;
+    font-size: 12px;
+    line-height: 1.45;
+  }
+  body.services-page .service-detail-grid .button {
+    font-size: 12px;
+    padding: 10px 5px;
+  }
+}
+
+/* Shared Portuguese header menu recommendation */
+.navigation a:not([aria-current="page"]){color:#fff}
+.navigation a[aria-current="page"]{color:#c5aa32}
+@media(min-width:641px){.site-header .navigation a:hover,.site-header .navigation a:focus-visible{color:#c5aa32}}
+.header-cta{height:40px;border:0;border-radius:10px;background:#b99b42;color:#fff;padding:0 24px;font-size:14px;font-weight:700}
+.header-cta:hover{background:#a98935;color:#fff}
+.header-cta span{display:inline-flex;width:16px;height:16px;flex:0 0 16px;align-items:center;justify-content:center;padding:0}
+.header-cta span svg{display:block;width:100%;height:100%}
+.header-cta span{width:22px;height:22px;flex-basis:22px;padding:4px;border-radius:50%;background:#25d366;color:#fff}
+.about-screen .whatsapp-widget{position:fixed;right:22px;bottom:22px;z-index:30}
+.about-screen .whatsapp-float{width:58px;height:58px;display:grid;place-items:center;border-radius:50%;background:#20c66b;color:#fff;box-shadow:0 3px 14px #0003;transition:transform .18s,background-color .18s;cursor:pointer;list-style:none}
+.about-screen .whatsapp-float::-webkit-details-marker{display:none}
+.about-screen .whatsapp-widget[open] .whatsapp-float{background:#159d51}
+.about-screen .whatsapp-widget:not([open]) .whatsapp-chat{display:none}
+.about-screen .whatsapp-float:hover{background:#159d51;transform:translateY(-2px)}
+.about-screen .whatsapp-float svg{display:block;width:34px;height:34px;fill:currentColor}
+@media(max-width:640px){.about-screen .whatsapp-float{width:54px;height:54px}.about-screen .whatsapp-float svg{width:31px;height:31px}}
+
+.about-screen .whatsapp-float{appearance:none;padding:0;border:0;cursor:pointer}
+.about-screen .whatsapp-chat{position:absolute;right:0;bottom:74px;width:min(340px,calc(100vw - 32px));overflow:hidden;border-radius:24px;background:#f7fffa;box-shadow:0 4px 18px #0004;font-family:var(--font-body,Arial,sans-serif)}
+.about-screen .whatsapp-chat>header{height:58px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;background:#20d366;color:#fff}
+.about-screen .whatsapp-chat>header span{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:600}
+.about-screen .whatsapp-chat>header svg{width:24px;height:24px;fill:currentColor}
+.about-screen .whatsapp-chat-close{width:34px;height:34px;border:0;border-radius:50%;background:#07883f;color:#fff;font-size:25px;line-height:1;cursor:pointer}
+.about-screen .whatsapp-chat-body{min-height:162px;padding:16px 14px 10px;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between}
+.about-screen .whatsapp-greeting{margin:0;padding:11px 15px;border-radius:24px;background:#fff;color:#555;font-size:14px;line-height:1.65;box-shadow:0 1px 4px #0002}
+.about-screen .whatsapp-chat-open{align-self:flex-end;min-height:48px;padding:0 19px;display:flex;align-items:center;gap:18px;border-radius:32px;background:#20d366;color:#fff;text-decoration:none;font-weight:600;box-shadow:0 2px 5px #0002}
+.about-screen .whatsapp-chat-open:hover{background:#18b957;color:#fff}
+.about-screen .whatsapp-chat-open span{font-size:20px}
+@media(max-width:640px){.about-screen .whatsapp-widget{right:16px;bottom:16px}.about-screen .whatsapp-chat{right:0;bottom:68px;width:min(340px,calc(100vw - 24px));border-radius:22px}.about-screen .whatsapp-chat>header{height:54px;padding:0 18px}.about-screen .whatsapp-chat-body{min-height:154px}.about-screen .whatsapp-chat-open{min-height:46px}}
+
+.contact-screen .whatsapp-widget{position:fixed;right:22px;bottom:22px;z-index:30}
+.contact-screen .whatsapp-float{position:static;width:58px;height:58px;display:grid;place-items:center;border-radius:50%;background:#20c66b;color:#fff;box-shadow:0 3px 14px #0003;transition:transform .18s,background-color .18s;cursor:pointer;list-style:none}
+.contact-screen .whatsapp-float::-webkit-details-marker{display:none}
+.contact-screen .whatsapp-widget[open] .whatsapp-float{background:#159d51}
+.contact-screen .whatsapp-widget:not([open]) .whatsapp-chat{display:none}
+.contact-screen .whatsapp-float:hover{background:#159d51;transform:translateY(-2px)}
+.contact-screen .whatsapp-float svg{display:block;width:34px;height:34px;fill:currentColor}
+@media(max-width:640px){.contact-screen .whatsapp-float{width:54px;height:54px}.contact-screen .whatsapp-float svg{width:31px;height:31px}}
+
+.contact-screen .whatsapp-float{appearance:none;padding:0;border:0;cursor:pointer}
+.contact-screen .whatsapp-chat{position:absolute;right:0;bottom:74px;width:min(340px,calc(100vw - 32px));overflow:hidden;border-radius:24px;background:#f7fffa;box-shadow:0 4px 18px #0004;font-family:var(--font-body,Arial,sans-serif)}
+.contact-screen .whatsapp-chat>header{height:58px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;background:#20d366;color:#fff}
+.contact-screen .whatsapp-chat>header span{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:600}
+.contact-screen .whatsapp-chat>header svg{width:24px;height:24px;fill:currentColor}
+.contact-screen .whatsapp-chat-close{width:34px;height:34px;border:0;border-radius:50%;background:#07883f;color:#fff;font-size:25px;line-height:1;cursor:pointer}
+.contact-screen .whatsapp-chat-body{min-height:162px;padding:16px 14px 10px;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between}
+.contact-screen .whatsapp-greeting{margin:0;padding:11px 15px;border-radius:24px;background:#fff;color:#555;font-size:14px;line-height:1.65;box-shadow:0 1px 4px #0002}
+.contact-screen .whatsapp-chat-open{align-self:flex-end;min-height:48px;padding:0 19px;display:flex;align-items:center;gap:18px;border-radius:32px;background:#20d366;color:#fff;text-decoration:none;font-weight:600;box-shadow:0 2px 5px #0002}
+.contact-screen .whatsapp-chat-open:hover{background:#18b957;color:#fff}
+.contact-screen .whatsapp-chat-open span{font-size:20px}
+@media(max-width:640px){.contact-screen .whatsapp-widget{right:16px;bottom:16px}.contact-screen .whatsapp-chat{right:0;bottom:68px;width:min(340px,calc(100vw - 24px));border-radius:22px}.contact-screen .whatsapp-chat>header{height:54px;padding:0 18px}.contact-screen .whatsapp-chat-body{min-height:154px}.contact-screen .whatsapp-chat-open{min-height:46px}}
+.contact-screen .whatsapp-widget{position:fixed;right:22px;bottom:22px;z-index:30}
+.contact-screen .whatsapp-float{position:static;right:auto;bottom:auto;width:58px;height:58px;padding:0;border:0;cursor:pointer}
+.contact-screen .whatsapp-widget[open] .whatsapp-float{background:#159d51}
+.contact-screen .whatsapp-chat{position:absolute;right:0;bottom:74px;width:min(340px,calc(100vw - 32px));overflow:hidden;border-radius:24px;background:#f7fffa;box-shadow:0 4px 18px #0004;font-family:var(--font-body,Arial,sans-serif)}
+.contact-screen .whatsapp-chat>header{height:58px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;background:#20d366;color:#fff}
+.contact-screen .whatsapp-chat>header span{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:600}
+.contact-screen .whatsapp-chat>header svg{width:24px;height:24px;fill:currentColor}
+.contact-screen .whatsapp-chat-close{width:34px;height:34px;border:0;border-radius:50%;background:#07883f;color:#fff;font-size:25px;line-height:1;cursor:pointer}
+.contact-screen .whatsapp-chat-body{min-height:162px;padding:16px 14px 10px;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between}
+.contact-screen .whatsapp-greeting{margin:0;padding:11px 15px;border-radius:24px;background:#fff;color:#555;font-size:14px;line-height:1.65;box-shadow:0 1px 4px #0002}
+.contact-screen .whatsapp-chat-open{align-self:flex-end;min-height:48px;padding:0 19px;display:flex;align-items:center;gap:18px;border-radius:32px;background:#20d366;color:#fff;text-decoration:none;font-weight:600;box-shadow:0 2px 5px #0002}
+.contact-screen .whatsapp-chat-open:hover{background:#18b957;color:#fff}
+.contact-screen .whatsapp-chat-open span{font-size:20px}
+.contact-screen .whatsapp-widget:not([open]) .whatsapp-chat{display:none}
+.contact-screen .whatsapp-chat[hidden]{display:none}
+@media(max-width:640px){.contact-screen .whatsapp-widget{right:16px;bottom:16px}.contact-screen .whatsapp-chat{right:0;bottom:68px;width:min(340px,calc(100vw - 24px));border-radius:22px}.contact-screen .whatsapp-chat>header{height:54px;padding:0 18px}.contact-screen .whatsapp-chat-body{min-height:154px}.contact-screen .whatsapp-chat-open{min-height:46px}}
+
+/* Contato floating WhatsApp: explicit button toggle and reliable popup visibility. */
+.contact-screen .whatsapp-widget{position:fixed;right:22px;bottom:22px;z-index:30}
+.contact-screen .whatsapp-float{position:static;display:grid;place-items:center;width:58px;height:58px;padding:0;border:0;border-radius:50%;background:#20c66b;color:#fff;box-shadow:0 3px 14px #0003;cursor:pointer}
+.contact-screen .whatsapp-widget.is-open .whatsapp-float{background:#159d51}
+.contact-screen .whatsapp-chat[hidden]{display:none!important}
+.contact-screen .whatsapp-widget.is-open .whatsapp-chat{display:block}
+@media(max-width:640px){.contact-screen .whatsapp-widget{right:16px;bottom:16px}.contact-screen .whatsapp-float{width:54px;height:54px}}
+/* Portfolio responsive layout and legible mobile navigation. */
+@media(max-width:1275px){
+  .portfolio-screen .portfolio-intro{max-width:100%;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(24px,4vw,52px);padding-left:5%;padding-right:5%}
+  .portfolio-screen .portfolio-copy h1{font-size:clamp(30px,3.5vw,40px)}
+}
+@media(max-width:900px){
+  .portfolio-screen .portfolio-intro{grid-template-columns:minmax(0,560px);justify-content:center;gap:32px;padding:56px 5% 38px}
+  .portfolio-screen .portfolio-portrait{height:360px}
+  .portfolio-screen .portfolio-copy>p:not(.eyebrow){font-size:14px}
+  .portfolio-screen .gallery-full{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:760px){
+  .portfolio-screen .portfolio-intro{padding:48px 6% 32px}
+  .portfolio-screen .portfolio-visual{padding-top:22px}
+  .portfolio-screen .portfolio-portrait{height:auto;aspect-ratio:1.28/1}
+  .portfolio-screen .portfolio-copy{max-width:620px}
+}
+@media(max-width:640px){
+  .portfolio-screen .site-header .menu-toggle span{background:#fff}
+  .portfolio-screen .navigation.is-open{background:#171515}
+  .portfolio-screen .navigation.is-open a{color:#fff}
+  .portfolio-screen .portfolio-intro{padding:42px 7% 28px}
+  .portfolio-screen .portfolio-copy h1{font-size:32px}
+  .portfolio-screen .gallery-full{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+}
+
+/* Keep tablet headers uncluttered and prevent navigation labels from wrapping. */
+@media(min-width:641px) and (max-width:1100px){
+  .site-header{height:76px;display:flex;align-items:center;gap:14px;padding:0 5%}
+  .site-header>.brand{width:150px;height:45px;flex:0 0 150px}
+  .site-header .header-cta{display:flex;min-width:176px;margin-left:auto;font-size:12px}
+  .site-header .menu-toggle{display:flex;flex-direction:column;justify-content:center;gap:6px;padding:12px;border:0;background:transparent;z-index:12;cursor:pointer}
+  .site-header .menu-toggle span{display:block;width:23px;height:2px;background:#fff}
+  .site-header .navigation{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:12px 7% 22px;background:#171515;box-shadow:0 8px 16px #0002}
+  .site-header .navigation.is-open{display:flex}
+  .site-header .navigation a{padding:13px 0;border-bottom:1px solid #343434;color:#fff;font-size:13px;white-space:nowrap}
+}
+@media(min-width:641px) and (max-width:760px){
+  .site-header .header-cta{display:none}
+  .site-header .menu-toggle{margin-left:auto}
+}
+
+/* Portfolio WhatsApp chat panel, matching the About page widget. */
+.portfolio-screen .portfolio-whatsapp-widget{position:fixed;right:22px;bottom:22px;z-index:30}
+.portfolio-screen .portfolio-whatsapp-float{appearance:none;padding:0;border:0;width:58px;height:58px;display:grid;place-items:center;border-radius:50%;background:#20c66b;color:#fff;box-shadow:0 3px 14px #0003;transition:transform .18s,background-color .18s;cursor:pointer;list-style:none}
+.portfolio-screen .portfolio-whatsapp-float::-webkit-details-marker{display:none}
+.portfolio-screen .portfolio-whatsapp-float svg{display:block;width:36px;height:36px;fill:currentColor}
+.portfolio-screen .portfolio-whatsapp-float:hover{background:#159d51;transform:translateY(-2px)}
+.portfolio-screen .portfolio-whatsapp-widget[open] .portfolio-whatsapp-float{background:#159d51}
+.portfolio-screen .portfolio-whatsapp-widget:not([open]) .whatsapp-chat{display:none}
+.portfolio-screen .whatsapp-chat{position:absolute;right:0;bottom:74px;width:min(340px,calc(100vw - 32px));overflow:hidden;border-radius:24px;background:#f7fffa;box-shadow:0 4px 18px #0004;font-family:var(--font-body,Arial,sans-serif)}
+.portfolio-screen .whatsapp-chat>header{height:58px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;background:#20d366;color:#fff}
+.portfolio-screen .whatsapp-chat>header span{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:600}
+.portfolio-screen .whatsapp-chat>header svg{width:24px;height:24px;fill:currentColor}
+.portfolio-screen .whatsapp-chat-close{width:34px;height:34px;border:0;border-radius:50%;background:#07883f;color:#fff;font-size:25px;line-height:1;cursor:pointer}
+.portfolio-screen .whatsapp-chat-body{min-height:162px;padding:16px 14px 10px;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between}
+.portfolio-screen .whatsapp-greeting{margin:0;padding:11px 15px;border-radius:24px;background:#fff;color:#555;font-size:14px;line-height:1.65;box-shadow:0 1px 4px #0002}
+.portfolio-screen .whatsapp-chat-open{align-self:flex-end;min-height:48px;padding:0 19px;display:flex;align-items:center;gap:18px;border-radius:32px;background:#20d366;color:#fff;text-decoration:none;font-weight:600;box-shadow:0 2px 5px #0002}
+.portfolio-screen .whatsapp-chat-open:hover{background:#18b957;color:#fff}
+.portfolio-screen .whatsapp-chat-open span{font-size:20px}
+.portfolio-screen .portfolio-intro .portfolio-copy .button svg{width:22px;height:22px;flex:0 0 22px}
+.portfolio-screen .portfolio-cta .button svg{width:21px;height:21px;flex:0 0 21px}
+.portfolio-screen .gallery-full .gallery-image{cursor:zoom-in}
+@media(hover:hover){.portfolio-screen .gallery-full .gallery-image{transition:filter .22s ease,transform .22s ease}.portfolio-screen .gallery-full .gallery-image:hover{filter:brightness(.62);transform:translateY(-3px)}}
+.portfolio-screen .gallery-full .gallery-image{position:relative;overflow:hidden;isolation:isolate}
+.portfolio-screen .gallery-full .gallery-image::before{content:"";position:absolute;inset:0;background-image:inherit;background-position:inherit;background-size:inherit;transition:transform .32s ease}
+@media(hover:hover){.portfolio-screen .gallery-full .gallery-image:hover::before{transform:scale(1.06)}}
+.portfolio-screen .gallery-full .gallery-image:focus-visible{outline:3px solid #b6a52d;outline-offset:3px;filter:brightness(.72)}
+.portfolio-screen.portfolio-lightbox-open{overflow:hidden}
+.portfolio-screen .portfolio-lightbox[hidden]{display:none}
+.portfolio-screen .portfolio-lightbox{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.82);color:#fff}
+.portfolio-screen .portfolio-lightbox:fullscreen{background:#000}
+.portfolio-screen .portfolio-lightbox:fullscreen .portfolio-lightbox-image{max-width:96vw;max-height:96vh}
+.portfolio-screen .portfolio-lightbox-bar{position:absolute;z-index:5;top:0;left:0;right:0;height:58px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;background:rgba(0,0,0,.42)}
+.portfolio-screen .portfolio-lightbox-tools{display:flex;align-items:center;gap:12px}
+.portfolio-screen .portfolio-lightbox-tools{position:relative}
+.portfolio-screen .portfolio-lightbox-tools button{width:34px;height:38px;padding:5px;display:grid;place-items:center}
+.portfolio-screen .portfolio-lightbox-tools svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.portfolio-screen .portfolio-lightbox-count{font:16px/1.2 Georgia,serif}
+.portfolio-screen .portfolio-lightbox button{border:0;color:#fff;background:transparent;cursor:pointer}
+.portfolio-screen .portfolio-lightbox-tools .portfolio-lightbox-close{width:34px;height:38px;font-size:16px;line-height:1;display:grid;place-items:center}
+.portfolio-screen .portfolio-lightbox-tools .portfolio-lightbox-close svg{width:21px;height:21px}
+.portfolio-screen .portfolio-share-menu[hidden]{display:none}
+.portfolio-screen .portfolio-share-menu{position:absolute;top:calc(100% + 13px);right:-3px;z-index:3;width:216px;padding:10px 0;border-radius:3px;background:#fff;color:#171717;box-shadow:0 5px 18px #0004;font:12px/1.2 Georgia,serif}
+.portfolio-screen .portfolio-share-menu::before{content:"";position:absolute;top:-8px;right:13px;border-width:0 8px 8px;border-style:solid;border-color:transparent transparent #fff}
+.portfolio-screen .portfolio-share-menu a,.portfolio-screen .portfolio-share-menu button{width:100%;height:30px;padding:0 15px;display:flex;align-items:center;gap:10px;color:#171717;text-decoration:none;text-align:left;font:inherit;white-space:nowrap}
+.portfolio-screen .portfolio-share-menu a:hover,.portfolio-screen .portfolio-share-menu button:hover{background:#f2f2f2;opacity:1}
+.portfolio-screen .portfolio-share-menu .share-brand{width:15px;display:inline-flex;justify-content:center;align-items:center;font:700 15px/1 Arial,sans-serif}
+.portfolio-screen .portfolio-share-menu .share-facebook{color:#4267b2}.portfolio-screen .portfolio-share-menu .share-x{color:#111}.portfolio-screen .portfolio-share-menu .share-pinterest{color:#bd081c}.portfolio-screen .portfolio-share-menu .share-download{color:#8c969f}
+.portfolio-screen .portfolio-lightbox-image{position:relative;z-index:1;display:block;max-width:min(78vw,900px);max-height:calc(100vh - 100px);object-fit:contain;box-shadow:0 10px 40px #0008;opacity:1;transform:scale(1);transition:opacity .28s ease,transform .32s ease;cursor:zoom-in}
+.portfolio-screen .portfolio-lightbox.is-expanded .portfolio-lightbox-image{max-width:94vw;max-height:calc(100vh - 78px)}
+.portfolio-screen .portfolio-lightbox-image.is-changing{opacity:0;transform:translateX(12px) scale(.985)}
+.portfolio-screen .portfolio-lightbox-image.is-zoomed{transform:scale(2.6);cursor:zoom-out}
+.portfolio-screen .portfolio-lightbox-prev,.portfolio-screen .portfolio-lightbox-next{position:absolute;z-index:4;top:50%;transform:translateY(-50%);width:58px;height:74px;font:48px/1 Georgia,serif!important;color:#fff!important;opacity:.85}
+.portfolio-screen .portfolio-lightbox-prev{left:5%}.portfolio-screen .portfolio-lightbox-next{right:5%}
+.portfolio-screen .portfolio-lightbox button:hover{opacity:.65}
+@media(max-width:640px){.portfolio-screen .portfolio-lightbox-bar{height:52px;padding:0 12px}.portfolio-screen .portfolio-lightbox-tools{gap:5px}.portfolio-screen .portfolio-lightbox-tools button{width:32px;height:36px}.portfolio-screen .portfolio-lightbox-tools svg{width:20px;height:20px}.portfolio-screen .portfolio-lightbox-image{max-width:92vw;max-height:calc(100vh - 100px)}.portfolio-screen .portfolio-lightbox.is-expanded .portfolio-lightbox-image{max-width:96vw;max-height:calc(100vh - 68px)}.portfolio-screen .portfolio-lightbox-image.is-zoomed{transform:scale(1.8)}.portfolio-screen .portfolio-lightbox-prev,.portfolio-screen .portfolio-lightbox-next{width:42px;height:58px;font-size:40px!important}.portfolio-screen .portfolio-lightbox-prev{left:1%}.portfolio-screen .portfolio-lightbox-next{right:1%}}
+@media(max-width:640px){.portfolio-screen .portfolio-whatsapp-widget{right:16px;bottom:72px}.portfolio-screen .portfolio-whatsapp-float{width:54px;height:54px}.portfolio-screen .portfolio-whatsapp-float svg{width:32px;height:32px}.portfolio-screen .whatsapp-chat{right:0;bottom:68px;width:min(340px,calc(100vw - 24px));border-radius:22px}.portfolio-screen .whatsapp-chat>header{height:54px;padding:0 18px}.portfolio-screen .whatsapp-chat-body{min-height:154px}.portfolio-screen .whatsapp-chat-open{min-height:46px}}
+
+/* Ensure every text item in the Contact section is black while preserving icons. */
+.contact-screen .contact-page :is(h1,h2,p,label,input,textarea,button),
+.contact-screen .contact-page a:not(.social-icon){color:#000!important}
+.contact-screen .contact-page input::placeholder,
+.contact-screen .contact-page textarea::placeholder{color:#000!important;opacity:1}
+.contact-screen .contact-form button{color:#fff!important}
+.contact-screen .contact-fields label,
+.contact-screen .contact-form input,
+.contact-screen .contact-form textarea,
+.contact-screen .contact-form input::placeholder,
+.contact-screen .contact-form textarea::placeholder{color:#666!important}
+.contact-screen .contact-fields label,
+.contact-screen .contact-form input,
+.contact-screen .contact-form textarea,
+.contact-screen .contact-form input::placeholder,
+.contact-screen .contact-form textarea::placeholder{color:#000!important}
+.contact-screen .contact-fields label{color:#000!important}
+.contact-screen .contact-form input,
+.contact-screen .contact-form textarea,
+.contact-screen .contact-form input::placeholder,
+.contact-screen .contact-form textarea::placeholder{color:#666!important}
+
+/* Services overview follows the original two-column composition. */
+.services-overview{max-width:1320px;margin:0 auto;padding:112px 20px 80px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.65fr);align-items:start;gap:54px;background-image:radial-gradient(#f1f0ec .8px,transparent .8px);background-size:7px 7px}
+.services-overview-copy{padding-top:48px}
+.services-overview-copy .eyebrow{margin:0 0 20px;color:#b99b42;font-family:var(--font-heading);font-size:17px;font-style:italic;letter-spacing:.02em;text-transform:none}
+.services-overview-copy h1{margin:0 0 20px;font-family:var(--font-heading);font-size:clamp(34px,2.25vw,40px);font-weight:700;line-height:1.06;letter-spacing:-.025em}
+.services-overview-copy>p:not(.eyebrow){margin:0 0 16px;font-size:16px;line-height:1.55}
+.services-overview-rule{display:block;width:90px;height:1px;margin-top:30px;background:#b99b42}
+.services-overview .service-detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;gap:20px;background:#b99b42;border-radius:28px;padding:20px}
+.services-overview .service-detail-grid article{display:flex;flex-direction:column;align-items:center;padding:24px 18px 22px;border:1px solid #e8e2d8;border-radius:10px;background:#fff;box-shadow:none;text-align:center}
+.services-overview .service-detail-grid .service-icon{margin:0 0 12px;color:#c29c43;font-size:32px;line-height:1.2}
+.services-overview .service-detail-grid h2{margin:0 0 18px;font-size:22px;line-height:1.25}
+.services-overview .service-detail-grid p{min-height:0;margin:0 0 12px;font-size:15px;line-height:1.6;color:#111}
+.services-overview .service-detail-grid .button{align-self:stretch;margin-top:auto;padding:12px 8px;border-radius:22px;background:#b99b42;color:#fff;text-align:center;font-family:var(--font-heading);font-size:15px;white-space:nowrap}
+@media(max-width:1000px){.services-overview{grid-template-columns:1fr;gap:34px;padding:76px 7% 64px}.services-overview-copy{padding-top:0}.services-overview-copy h1{max-width:720px}.services-overview .service-detail-grid{gap:16px;padding:18px}}
+@media(max-width:640px){.services-overview{padding:48px 6% 42px;gap:22px}.services-overview-copy .eyebrow{margin-bottom:12px;font-size:15px}.services-overview-copy h1{font-size:30px;line-height:1.14;letter-spacing:-.02em}.services-overview-copy>p:not(.eyebrow){font-size:14px;line-height:1.6}.services-overview-rule{margin-top:20px}.services-overview .service-detail-grid{grid-template-columns:1fr;gap:14px;padding:12px;border-radius:20px}.services-overview .service-detail-grid article{padding:20px 16px}.services-overview .service-detail-grid h2{font-size:19px}.services-overview .service-detail-grid p{font-size:14px;line-height:1.55}.services-overview .service-detail-grid .button{white-space:normal;line-height:1.25}.services-page .portfolio-whatsapp-widget{display:none}}
+@media(min-width:1001px){.services-overview{max-width:1480px;padding-left:24px;padding-right:24px;grid-template-columns:minmax(0,.78fr) minmax(0,1.82fr);gap:32px}.services-overview .service-detail-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;padding:18px}.services-overview .service-detail-grid article{padding:22px 12px 20px}.services-overview .service-detail-grid h2{font-size:19px}.services-overview .service-detail-grid p{font-size:13px}.services-overview .service-detail-grid .button{font-size:13px;padding-inline:4px}}
+@media(min-width:1001px) and (max-width:1250px){.services-overview{grid-template-columns:minmax(0,.72fr) minmax(0,1.9fr);gap:24px}.services-overview .service-detail-grid{gap:10px;padding:14px}.services-overview .service-detail-grid article{padding-inline:9px}.services-overview .service-detail-grid h2{font-size:17px}.services-overview .service-detail-grid p{font-size:12px}.services-overview .service-detail-grid .button{font-size:11px}}
+@media(min-width:1001px){.services-overview{max-width:1600px;padding-left:20px;padding-right:20px}.services-overview .service-detail-grid{align-items:stretch}.services-overview .service-detail-grid article{height:100%}}
+.services-overview .service-detail-grid article{transition:color .2s ease}
+.services-overview .service-detail-grid article h2,
+.services-overview .service-detail-grid article p,
+.services-overview .service-detail-grid article .button{transition:color .2s ease,background-color .2s ease}
+.services-overview .service-detail-grid article:hover h2,
+.services-overview .service-detail-grid article:focus-within h2{color:#b99b42}
+.services-overview .service-detail-grid article:hover p,
+.services-overview .service-detail-grid article:focus-within p{color:#777}
+.services-overview .service-detail-grid article:hover .button,
+.services-overview .service-detail-grid article:focus-within .button{background:#efd9cd;color:#6f625b}
+.services-overview .service-detail-grid .service-icon{width:40px;height:40px;display:grid;place-items:center}
+.services-overview .service-detail-grid .service-icon svg{display:block;width:40px;height:40px;color:#c29c43}
+.services-overview .service-detail-grid .service-icon{width:46px;height:46px}
+.services-overview .service-detail-grid .service-icon svg{width:46px;height:46px}
+.services-overview .service-detail-grid .service-icon{width:48px;height:48px}
+.services-overview .service-detail-grid .service-icon svg{width:48px;height:48px}
+.services-overview .service-detail-grid .service-icon{position:relative;overflow:visible}
+.services-overview .service-detail-grid .service-icon img{position:absolute;top:50%;left:50%;width:107px;height:55px;max-width:none;transform:translate(-50%,-50%);object-fit:contain}
+
+/* Services page pricing panels, styled to match the reference layout. */
+body.services-page .services.section-pad{padding:70px 6% 92px}
+body.services-page .services .price-list{max-width:1240px;margin:0 auto;padding:0;border:0}
+body.services-page .services .price-heading{display:block;margin:0 auto 72px;text-align:center}
+body.services-page .services .price-heading .eyebrow{margin:0 0 20px;color:#b99b42;font-family:'Playfair Display',Georgia,serif;font-size:18px;font-style:italic;font-weight:600;letter-spacing:.02em;text-transform:none}
+body.services-page .services .price-heading h2{max-width:900px;margin:0 auto;font-size:38px;font-weight:700;line-height:1.12;letter-spacing:-.025em}
+body.services-page .services .price-columns{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;gap:20px 32px}
+body.services-page .services .price-panel{position:relative;isolation:isolate;overflow:hidden;padding:38px 48px;border-radius:20px;color:#fff;background:#282624;box-shadow:0 8px 24px #0002}
+body.services-page .services .price-panel::before{position:absolute;z-index:-1;inset:0;content:"";background-position:center;background-size:cover;filter:brightness(.38);transform:scale(1.02)}
+body.services-page .services .price-panel-cuts::before{background-image:url("assets/services-cover-21.jpg")}
+body.services-page .services .price-panel-highlights::before{background-image:url("assets/services-cover-29.jpg")}
+body.services-page .services .price-panel-care::before{background-image:url("assets/services-cover-12.jpg")}
+body.services-page .services .price-panel-color::before{background-image:url("assets/services-cover-16.jpg")}
+body.services-page .services .price-panel-cuts{grid-column:1;grid-row:1}
+body.services-page .services .price-panel-highlights{grid-column:2;grid-row:1}
+body.services-page .services .price-panel-care{grid-column:1;grid-row:2}
+body.services-page .services .price-panel-color{grid-column:2;grid-row:2}
+body.services-page .services .price-panel .price-group{padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;color:#fff}
+body.services-page .services .price-panel .price-group+.price-group{margin-top:28px;padding-top:2px}
+body.services-page .services .price-panel h3{margin:0 0 22px;color:#fff;font-family:'Playfair Display',Georgia,serif;font-size:32px;font-weight:600;line-height:1.2}
+body.services-page .services .price-panel p{display:flex;width:100%;align-items:baseline;gap:5px;margin:0;padding:8px 0;border:0;color:#fff;font-family:'Montserrat',Arial,sans-serif;font-size:17px;font-weight:800;line-height:1.35}
+body.services-page .services .price-panel p span{display:flex;min-width:0;flex:1;align-items:center;gap:3px;color:#fff}
+body.services-page .services .price-panel p span::after{content:"";flex:1 1 auto;min-width:8px;border-bottom:1px dotted #ffffffb8;transform:translateY(-.16em)}
+body.services-page .services .price-panel p b{flex:0 1 auto;max-width:220px;margin-left:auto;color:#ffd34d;font-family:'Montserrat',Arial,sans-serif;font-size:19px;font-weight:800;text-align:right;white-space:normal}
+body.services-page .services .price-panel-highlights .price-group p:nth-of-type(5),body.services-page .services .price-panel-color .price-group p:nth-of-type(5){margin-top:24px}
+body.services-page .services .price-note{max-width:1240px;margin:26px auto 0;color:#777;text-align:center}
+@media(max-width:1000px){body.services-page .services.section-pad{padding:62px 5% 76px}body.services-page .services .price-columns{gap:20px}body.services-page .services .price-panel{padding:30px 32px}body.services-page .services .price-heading{margin-bottom:52px}}
+@media(max-width:1000px){body.services-page .services .price-panel{padding:30px 28px}body.services-page .services .price-panel h3{font-size:30px}body.services-page .services .price-panel p{font-size:16px}body.services-page .services .price-panel p b{font-size:18px}}
+@media(max-width:640px){body.services-page .services.section-pad{padding:50px 6% 66px}body.services-page .services .price-heading{margin-bottom:30px}body.services-page .services .price-heading .eyebrow{margin-bottom:13px;font-size:15px}body.services-page .services .price-heading h2{font-size:30px;line-height:1.18}body.services-page .services .price-columns{grid-template-columns:1fr;gap:16px}body.services-page .services .price-panel{grid-column:1;grid-row:auto;padding:26px 22px;border-radius:16px}body.services-page .services .price-panel .price-group+.price-group{margin-top:24px}body.services-page .services .price-panel h3{margin-bottom:16px;font-size:26px}body.services-page .services .price-panel p{gap:6px;padding:6px 0;font-size:14px}body.services-page .services .price-panel p span{gap:4px}body.services-page .services .price-panel p b{font-size:17px}}
+
+/* Reviews on the services page */
+body.services-page .testimonials-live{padding:68px max(6%,calc((100% - 1250px)/2)) 76px;background:radial-gradient(ellipse at 78% 25%,#faf8f1 0,transparent 35%),#fff;text-align:center}
+body.services-page .testimonials-live .eyebrow{margin:0 0 14px;color:#b89a38;font:italic 600 16px Georgia,serif;letter-spacing:.02em;text-transform:none}
+body.services-page .testimonials-heading h2{max-width:900px;margin:0 auto;color:#171515;font-size:clamp(28px,2.35vw,38px);font-weight:700;line-height:1.2}
+body.services-page .testimonials-layout{display:grid;grid-template-columns:235px minmax(0,1fr);gap:24px;align-items:center;max-width:1120px;margin:60px auto 0}
+body.services-page .google-review-summary{display:flex;flex-direction:column;align-items:center;gap:5px;color:#111}
+body.services-page .google-review-summary>strong{font-size:22px;line-height:1.2;font-weight:700}
+body.services-page .google-overall-stars{font-size:34px;line-height:1.1;letter-spacing:-.06em;color:#f9b400;background:linear-gradient(90deg,#f9b400 90%,#d0d0d0 90%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+body.services-page .google-review-count{font-size:14px;color:#222}
+body.services-page .google-review-count b{font-weight:700}
+body.services-page .google-wordmark{margin-top:0;font:500 35px/1 Arial,sans-serif;letter-spacing:-2px;background:conic-gradient(from -35deg,#4285f4 0 23%,#34a853 23% 42%,#fbbc05 42% 59%,#ea4335 59% 79%,#4285f4 79%);background-clip:text;-webkit-background-clip:text;color:transparent}
+body.services-page .google-review-summary>a{margin-top:8px;color:#666;font-size:12px;text-decoration:underline;text-underline-offset:3px}
+body.services-page .reviews-carousel{position:relative;min-width:0;padding:0 16px}
+body.services-page .reviews-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;text-align:left}
+body.services-page .google-review-card{display:flex;min-width:0;min-height:228px;flex-direction:column;padding:17px 18px;background:#fff;border:1px solid #ededed;border-radius:14px;box-shadow:0 4px 14px #00000016}
+body.services-page .google-review-card-header,.google-review-person{display:flex;align-items:center}
+body.services-page .google-review-card-header{justify-content:space-between;gap:10px}
+body.services-page .google-review-person{min-width:0;gap:12px}
+body.services-page .google-review-avatar{display:grid;width:40px;height:40px;flex:0 0 40px;place-items:center;border-radius:50%;background:#e6edf9;color:#4d73bf;font-size:13px;font-weight:700}
+body.services-page .google-review-identity{display:flex;min-width:0;flex-direction:column;line-height:1.35}
+body.services-page .google-review-identity b{overflow:hidden;color:#151515;font-size:14px;font-weight:700;text-overflow:ellipsis;white-space:nowrap}
+body.services-page .google-review-identity small{color:#777;font-size:12px}
+body.services-page .google-review-source{font:700 20px Arial,sans-serif;background:conic-gradient(from -35deg,#4285f4 0 23%,#34a853 23% 42%,#fbbc05 42% 59%,#ea4335 59% 79%,#4285f4 79%);background-clip:text;-webkit-background-clip:text;color:transparent}
+body.services-page .google-review-stars{margin:11px 0 5px;color:#f9b400;font-size:19px;line-height:1;letter-spacing:1px}
+body.services-page .google-review-verified{display:inline-grid;width:15px;height:15px;margin-left:7px;place-items:center;border-radius:50%;background:#4285f4;color:#fff;font:700 10px/1 Arial,sans-serif;vertical-align:2px;letter-spacing:0}
+body.services-page .google-review-text{display:block;overflow-y:auto;max-height:112px;margin:5px 0 8px;color:#222;font-size:14px;line-height:1.55;scrollbar-width:thin;flex:1}
+body.services-page .google-review-text.is-expanded{max-height:none;overflow:visible}
+body.services-page .google-review-more{align-self:flex-start;padding:0;border:0;background:none;color:#858585;font:inherit;font-size:12px;cursor:pointer}
+body.services-page .google-review-text{color:#000}
+body.services-page .google-review-source{font-size:27px;line-height:1}
+body.services-page .google-review-stars{font-size:25px;letter-spacing:1.5px}
+body.services-page .reviews-controls{position:absolute;inset:50% -1px auto;display:flex;justify-content:space-between;pointer-events:none;transform:translateY(-50%)}
+body.services-page .reviews-controls button{display:grid;width:34px;height:34px;place-items:center;border:1px solid #ddd;border-radius:50%;background:#fff;color:#666;font-size:25px;line-height:1;cursor:pointer;pointer-events:auto}
+body.services-page .reviews-controls button:disabled{opacity:.45;cursor:default}
+body.services-page .reviews-empty{color:#777;font-size:14px}
+@media(max-width:900px){body.services-page .testimonials-live{padding:58px 5% 66px}body.services-page .testimonials-layout{grid-template-columns:190px minmax(0,1fr);gap:14px;margin-top:42px}body.services-page .reviews-cards{gap:9px}body.services-page .google-review-card{padding:14px 12px}body.services-page .google-review-identity b{font-size:12px}body.services-page .google-review-text{font-size:12px}}
+@media(max-width:640px){body.services-page .testimonials-live{padding:48px 5% 56px}body.services-page .testimonials-heading h2{font-size:27px}body.services-page .testimonials-layout{grid-template-columns:1fr;gap:24px;margin-top:32px}body.services-page .google-review-summary>strong{font-size:20px}body.services-page .google-overall-stars{font-size:30px}body.services-page .google-wordmark{font-size:31px}body.services-page .reviews-carousel{padding:0 8px;width:100%}body.services-page .reviews-cards{grid-template-columns:1fr}body.services-page .google-review-card:not(:first-child){display:none}body.services-page .google-review-card{min-height:220px;padding:17px}body.services-page .google-review-identity b{font-size:14px}body.services-page .google-review-text{font-size:14px;-webkit-line-clamp:5}body.services-page .reviews-controls{inset:50% -8px auto}}
+
+body.services-page .services-booking-cta{display:flex;justify-content:center;padding:70px 20px 66px;background:#fff}
+body.services-page .services-booking-button{display:inline-flex;min-height:58px;align-items:center;justify-content:center;gap:12px;padding:0 18px;border-radius:10px;background:#b69a40;box-shadow:0 5px 12px #0003;color:#fff;font-size:16px;font-weight:700;line-height:1.2;transition:background .2s,transform .2s,box-shadow .2s}
+body.services-page .services-booking-button:hover{transform:translateY(-2px);background:#a88b31;box-shadow:0 8px 16px #0003}
+body.services-page .services-booking-button:focus-visible{outline:3px solid #171515;outline-offset:3px}
+body.services-page .services-booking-button svg{display:block;width:19px;height:19px;flex:0 0 19px;align-self:center;fill:currentColor;stroke:none;shape-rendering:geometricPrecision}
+@media(max-width:640px){body.services-page .services-booking-cta{padding:44px 18px 48px}body.services-page .services-booking-button{min-height:54px;padding:0 16px;font-size:14px}}
+
+
+/* Tighten the transition from prices into the reviews section. */
+body.services-page main > .services.section-pad{padding-bottom:20px}
+body.services-page .services-booking-cta{padding-top:45px}
+body.services-page .testimonials-heading h2{max-width:960px;margin-right:auto;margin-left:auto;font-size:clamp(30px,2.2vw,36px);line-height:1.2}
+body.services-page .services-booking-button{min-height:50px;padding-right:26px;padding-left:26px}
+@media(max-width:640px){body.services-page .services-booking-button{min-height:50px;padding-right:20px;padding-left:20px}}
+
+body.services-page .services-footer{display:flex;flex-direction:column;align-items:center;gap:0;padding:70px 7% 22px;background:#211e1e;color:#fff;text-align:center}
+body.services-page .services-footer .brand{display:flex;width:auto;height:auto;align-items:center;justify-content:center;margin:0 0 27px}
+body.services-page .services-footer .brand-logo{display:block;width:230px;height:auto;max-height:56px;object-fit:contain}
+body.services-page .services-footer h2{margin:0;color:#fff;font-family:'Montserrat',Arial,sans-serif;font-size:30px;font-weight:800;line-height:1.15}
+body.services-page .services-footer>p{margin:20px 0 31px;color:#eee;font-size:15px;line-height:1.55}
+body.services-page .services-footer nav{display:flex;justify-content:center;flex-wrap:wrap;gap:0;color:#fff;font-size:14px}
+body.services-page .services-footer nav a{padding:7px 10px;white-space:nowrap}
+body.services-page .services-footer nav a+a::before{content:'•';margin-right:10px;color:#f1c735}
+body.services-page .services-footer .copyright{width:min(630px,90vw);margin:39px 0 0;padding:31px 0 0;border:0;color:#eee;font-size:13px}
+body.services-page .services-footer .copyright::before{content:'';display:block;width:100%;height:1px;margin:0 auto 31px;background:linear-gradient(90deg,#aaa 0 49%,transparent 49% 50%,#aaa 50% 100%)}
+@media(max-width:640px){body.services-page .services-footer{padding:54px 6% 20px}body.services-page .services-footer .brand-logo{width:195px}body.services-page .services-footer h2{font-size:24px}body.services-page .services-footer>p{font-size:13px}body.services-page .services-footer>p br{display:none}body.services-page .services-footer nav{font-size:12px}body.services-page .services-footer nav a{padding:6px 5px}body.services-page .services-footer nav a+a::before{margin-right:5px}body.services-page .services-footer .copyright{font-size:11px}}
+body.services-page .services-footer nav a::before{content:'•';margin-right:10px;color:#f1c735}
+body.services-page .services-footer nav a+a::before{content:'•';margin-right:10px}
+@media(max-width:640px){body.services-page .services-footer nav a::before,body.services-page .services-footer nav a+a::before{margin-right:5px}}
+
+/* Match the provided centered footer reference. */
+body.services-page .services-footer{padding-top:58px;background:#171515}
+body.services-page .services-footer .brand{margin-bottom:27px}
+body.services-page .services-footer .brand-logo{width:220px}
+body.services-page .services-footer nav a::before,body.services-page .services-footer nav a+a::before{content:none;display:none}
+body.services-page .services-footer nav a{padding:7px 10px}
+body.services-page .services-footer .copyright{width:min(526px,90vw);margin-top:20px;padding-top:25px}
+body.services-page .services-footer .copyright::before{height:1px;margin-bottom:29px;background:#514c4c}
+@media(max-width:640px){body.services-page .services-footer{padding-top:48px}body.services-page .services-footer .brand-logo{width:195px}body.services-page .services-footer nav a{padding:6px 5px}}
+/* Final sizing pass against the supplied footer screenshot. */
+body.services-page .services-footer{padding-top:48px}
+body.services-page .services-footer .brand-logo{width:250px}
+body.services-page .services-footer>p{font-size:14px}
+body.services-page .services-footer nav{font-size:13px}
+body.services-page .services-footer .copyright{margin-top:10px;padding-top:20px;font-size:12px}
+body.services-page .services-footer .copyright::before{margin-bottom:29px}
+@media(max-width:640px){body.services-page .services-footer{padding-top:45px}body.services-page .services-footer .brand-logo{width:205px}}
+body.services-page .services-footer .brand-logo{width:290px;max-height:68px}
+@media(max-width:640px){body.services-page .services-footer .brand-logo{width:230px;max-height:56px}}
+body.services-page .services-footer .brand{align-self:center;margin-left:16px;margin-right:auto}
+body.services-page .services-footer .brand{margin-right:0;margin-left:0;transform:translateX(16px)}
+body.services-page .google-wordmark{display:flex;gap:0;background:none;color:inherit;-webkit-text-fill-color:initial}
+body.services-page .google-wordmark span:nth-child(1),body.services-page .google-wordmark span:nth-child(4){color:#4285f4}
+body.services-page .google-wordmark span:nth-child(2),body.services-page .google-wordmark span:nth-child(6){color:#ea4335}
+body.services-page .google-wordmark span:nth-child(3){color:#fbbc05}
+body.services-page .google-wordmark span:nth-child(5){color:#34a853}
+body.services-page .google-review-summary>a{display:none}
+body.services-page .google-wordmark{font-family:Arial,sans-serif;font-size:34px;font-weight:400;letter-spacing:-1.8px;line-height:1;color:#4285f4}
+body.services-page .google-wordmark{font-weight:600;-webkit-text-stroke:.25px currentColor}
+body.services-page .google-wordmark-image{display:block;width:116px;height:auto;margin:3px auto 0;object-fit:contain}
+/* Horizontal review changes, matching the reference carousel. */
+body.services-page .reviews-cards{align-items:stretch;transition:opacity .22s ease,transform .22s ease;will-change:opacity,transform}
+body.services-page .reviews-cards.is-transitioning{opacity:0;transform:translateX(-28px)}
+body.services-page .reviews-cards.is-transitioning.is-moving-prev{transform:translateX(28px)}
+body.services-page .reviews-cards.is-arriving{animation:reviews-arrive-next .38s cubic-bezier(.22,.75,.25,1) both}
+body.services-page .reviews-cards.is-arriving.is-moving-prev{animation-name:reviews-arrive-prev}
+@keyframes reviews-arrive-next{from{opacity:0;transform:translateX(28px)}to{opacity:1;transform:translateX(0)}}
+@keyframes reviews-arrive-prev{from{opacity:0;transform:translateX(-28px)}to{opacity:1;transform:translateX(0)}}
+body.services-page .google-review-card{min-height:246px}
+body.services-page .google-review-identity b{font-size:15px}
+body.services-page .google-review-identity small{font-size:13px}
+body.services-page .google-review-stars{font-size:25px}
+body.services-page .google-review-text{font-size:15px;line-height:1.58;-webkit-line-clamp:4}
+body.services-page .google-review-more{font-size:13px}
+@media(max-width:900px){body.services-page .google-review-identity b{font-size:14px}body.services-page .google-review-text{font-size:14px}}
+@media(max-width:640px){body.services-page .google-review-card{min-height:230px}body.services-page .google-review-stars{font-size:21px}body.services-page .google-review-text{font-size:15px;-webkit-line-clamp:5}}
+body.services-page .google-review-text.is-expanded{display:block;-webkit-line-clamp:unset}
+/* One-at-a-time horizontal carousel: move only the next review left. */
+body.services-page .reviews-viewport{width:100%;min-width:0;overflow:hidden}
+body.services-page .reviews-cards{display:flex;grid-template-columns:none;gap:14px;width:100%;min-width:0;transform:translateX(0);transition:transform .82s cubic-bezier(.22,.75,.25,1);will-change:transform}
+body.services-page .reviews-viewport .google-review-card{display:flex;flex:0 0 calc((100% - 28px)/3)}
+body.services-page .google-review-summary .google-overall-stars{font-size:38px}
+@media(max-width:900px){body.services-page .reviews-cards{gap:9px}body.services-page .reviews-viewport .google-review-card{flex-basis:calc((100% - 18px)/3)}}
+@media(max-width:640px){body.services-page .reviews-cards{gap:0}body.services-page .reviews-viewport .google-review-card,body.services-page .reviews-viewport .google-review-card:not(:first-child){display:flex;flex:0 0 100%}body.services-page .google-review-summary .google-overall-stars{font-size:34px}}
+body.services-page .reviews-controls{inset:50% 0 auto;z-index:5}
+body.services-page .reviews-controls button{position:relative;visibility:visible;cursor:pointer}
+body.services-page .reviews-controls button.is-hidden-at-start{visibility:hidden;pointer-events:none}
+body.services-page .reviews-controls button.is-hidden-at-end{visibility:hidden;pointer-events:none}
+body.services-page .google-review-avatar.has-photo{overflow:hidden;background:transparent}
+body.services-page .google-review-avatar.has-photo img{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover}
+body.services-page .google-review-more{display:inline-flex;flex:0 0 auto;min-height:18px;align-items:center}
+body.services-page .google-review-more[hidden]{display:none!important}
+
+/* Shared desktop header placement for all five pages */
+@media (min-width: 1101px){
+  .site-header{
+    padding-inline: max(3.4%, calc((100% - 1210px)/2));
+    grid-template-columns: 220px minmax(0, 1fr) 245px;
+  }
+  .site-header .navigation{font-size:15px;gap:44px}
+}
+
+/* Services floating WhatsApp panel */
+.services-page .portfolio-whatsapp-widget{position:fixed;right:22px;bottom:22px;z-index:30}
+.services-page .portfolio-whatsapp-float{appearance:none;padding:0;border:0;width:58px;height:58px;display:grid;place-items:center;border-radius:50%;background:#20c66b;color:#fff;box-shadow:0 3px 14px #0003;transition:transform .18s,background-color .18s;cursor:pointer;list-style:none}
+.services-page .portfolio-whatsapp-float::-webkit-details-marker{display:none}
+.services-page .portfolio-whatsapp-float svg{display:block;width:36px;height:36px;fill:currentColor}
+.services-page .portfolio-whatsapp-float:hover{background:#159d51;transform:translateY(-2px)}
+.services-page .portfolio-whatsapp-widget[open] .portfolio-whatsapp-float{background:#159d51}
+.services-page .portfolio-whatsapp-widget:not([open]) .whatsapp-chat{display:none}
+.services-page .whatsapp-chat{position:absolute;right:0;bottom:74px;width:min(340px,calc(100vw - 32px));overflow:hidden;border-radius:24px;background:#f7fffa;box-shadow:0 4px 18px #0004;font-family:var(--font-body,Arial,sans-serif)}
+.services-page .whatsapp-chat>header{height:58px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;background:#20d366;color:#fff}
+.services-page .whatsapp-chat>header span{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:600}
+.services-page .whatsapp-chat>header svg{width:24px;height:24px;fill:currentColor}
+.services-page .whatsapp-chat-close{width:34px;height:34px;border:0;border-radius:50%;background:#07883f;color:#fff;font-size:25px;line-height:1;cursor:pointer}
+.services-page .whatsapp-chat-body{min-height:162px;padding:16px 14px 10px;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between}
+.services-page .whatsapp-greeting{margin:0;padding:11px 15px;border-radius:24px;background:#fff;color:#555;font-size:14px;line-height:1.65;box-shadow:0 1px 4px #0002}
+.services-page .whatsapp-chat-open{align-self:flex-end;min-height:48px;padding:0 19px;display:flex;align-items:center;gap:18px;border-radius:32px;background:#20d366;color:#fff;text-decoration:none;font-weight:600;box-shadow:0 2px 5px #0002}
+.services-page .whatsapp-chat-open:hover{background:#18b957;color:#fff}
+.services-page .whatsapp-chat-open span{font-size:20px}
+
+/* Phone menu: highlight the current page and the item being pointed at. */
+@media(max-width:640px){
+  .site-header .navigation.is-open{
+    z-index:20;
+    height:auto!important;
+    max-height:none!important;
+    padding:0;
+    gap:0!important;
+    overflow:visible;
+    border:0;
+    border-radius:0 0 10px 10px;
+    background:#171515!important;
+    box-shadow:0 12px 24px #0003;
+  }
+  .site-header .navigation.is-open a,
+  .site-header .navigation.is-open a:first-child{
+    display:flex;
+    height:34px!important;
+    min-height:34px!important;
+    flex:0 0 34px!important;
+    align-items:center;
+    padding:0 20px!important;
+    line-height:1;
+    border-bottom:1px solid #343434;
+    background:transparent;
+    color:#fff;
+    transition:background-color .18s ease,color .18s ease;
+  }
+  .site-header .navigation.is-open a:last-child{border-bottom:0;border-radius:0 0 10px 10px}
+  .site-header .navigation.is-open a[aria-current="page"],
+  .site-header .navigation.is-open a:hover,
+  .site-header .navigation.is-open a:focus-visible,
+  .site-header .navigation.is-open a:active{
+    background:#b99b42;
+    color:#fff;
+  }
+}
+@media(max-width:640px){.services-page .portfolio-whatsapp-widget{right:16px;bottom:72px}.services-page .portfolio-whatsapp-float{width:54px;height:54px}.services-page .portfolio-whatsapp-float svg{width:32px;height:32px}.services-page .whatsapp-chat{right:0;bottom:68px;width:min(340px,calc(100vw - 24px));border-radius:22px}.services-page .whatsapp-chat>header{height:54px;padding:0 18px}.services-page .whatsapp-chat-body{min-height:154px}.services-page .whatsapp-chat-open{min-height:46px}}
+
+/* Normalize the WhatsApp button and popup dimensions across pages */
+.whatsapp-widget .whatsapp-float,
+.whatsapp-widget .portfolio-whatsapp-float,
+.whatsapp-widget .whatsapp-float button,
+.whatsapp-widget .portfolio-whatsapp-float button,
+.contact-screen .whatsapp-float,
+.portfolio-screen .portfolio-whatsapp-float,
+.services-page .portfolio-whatsapp-float{width:58px;height:58px;box-sizing:border-box}
+.whatsapp-widget .whatsapp-float svg,
+.whatsapp-widget .portfolio-whatsapp-float svg,
+.contact-screen .whatsapp-float svg,
+.portfolio-screen .portfolio-whatsapp-float svg,
+.services-page .portfolio-whatsapp-float svg{width:36px;height:36px}
+.whatsapp-widget .whatsapp-chat,
+.contact-screen .whatsapp-chat,
+.portfolio-screen .whatsapp-chat,
+.services-page .whatsapp-chat{width:min(340px,calc(100vw - 32px));border-radius:24px}
+.whatsapp-widget .whatsapp-chat>header,
+.contact-screen .whatsapp-chat>header,
+.portfolio-screen .whatsapp-chat>header,
+.services-page .whatsapp-chat>header{height:58px}
+.whatsapp-widget .whatsapp-chat-body,
+.contact-screen .whatsapp-chat-body,
+.portfolio-screen .whatsapp-chat-body,
+.services-page .whatsapp-chat-body{min-height:162px}
+.whatsapp-widget .whatsapp-chat-open,
+.contact-screen .whatsapp-chat-open,
+.portfolio-screen .whatsapp-chat-open,
+.services-page .whatsapp-chat-open{min-height:48px}
+@media(max-width:640px){
+  .whatsapp-widget .whatsapp-float,
+  .whatsapp-widget .portfolio-whatsapp-float,
+  .contact-screen .whatsapp-float,
+  .portfolio-screen .portfolio-whatsapp-float,
+  .services-page .portfolio-whatsapp-float{width:54px;height:54px}
+  .whatsapp-widget .whatsapp-float svg,
+  .whatsapp-widget .portfolio-whatsapp-float svg,
+  .contact-screen .whatsapp-float svg,
+  .portfolio-screen .portfolio-whatsapp-float svg,
+  .services-page .portfolio-whatsapp-float svg{width:32px;height:32px}
+  .whatsapp-widget .whatsapp-chat,
+  .contact-screen .whatsapp-chat,
+  .portfolio-screen .whatsapp-chat,
+  .services-page .whatsapp-chat{width:min(340px,calc(100vw - 24px));border-radius:22px}
+  .whatsapp-widget .whatsapp-chat>header,
+  .contact-screen .whatsapp-chat>header,
+  .portfolio-screen .whatsapp-chat>header,
+  .services-page .whatsapp-chat>header{height:54px}
+  .whatsapp-widget .whatsapp-chat-body,
+  .contact-screen .whatsapp-chat-body,
+  .portfolio-screen .whatsapp-chat-body,
+  .services-page .whatsapp-chat-body{min-height:154px}
+  .whatsapp-widget .whatsapp-chat-open,
+  .contact-screen .whatsapp-chat-open,
+  .portfolio-screen .whatsapp-chat-open,
+  .services-page .whatsapp-chat-open{min-height:46px}
+}
+
+/* Clickable dark side areas in the portfolio lightbox */
+.portfolio-screen .portfolio-lightbox-hit{position:absolute;top:58px;bottom:0;z-index:2;padding:0;border:0;background:transparent;cursor:pointer}
+.portfolio-screen .portfolio-lightbox-hit-prev{left:0}
+.portfolio-screen .portfolio-lightbox-hit-next{right:0}
+.portfolio-screen .portfolio-lightbox-image{z-index:3}
+.portfolio-screen .portfolio-lightbox-prev,.portfolio-screen .portfolio-lightbox-next{z-index:4}
+@media(max-width:640px){.portfolio-screen .portfolio-lightbox-hit{top:52px}}
+
+/* Shared footer matching the supplied reference on all five pages */
+body .reference-footer{display:flex;flex-direction:column;align-items:center;gap:0;padding:58px 7% 20px;background:#211e1e;color:#fff;text-align:center}
+body .reference-footer .brand-footer{display:flex;width:auto;height:auto;align-items:center;justify-content:center;margin:0 0 28px}
+body .reference-footer .brand-logo{display:block;width:220px;height:auto;max-height:56px;object-fit:contain}
+body .reference-footer h2{max-width:820px;margin:0 0 22px;color:#fff;font:700 30px/1.15 'Montserrat',Arial,sans-serif}
+body .reference-footer>p{margin:0 0 28px;color:#eee;font-size:14px;line-height:1.55}
+body .reference-footer nav{display:flex;justify-content:center;flex-wrap:wrap;gap:0;color:#eee;font-size:13px}
+body .reference-footer nav a{padding:7px 10px;white-space:nowrap}
+body .reference-footer nav a+a::before{content:'•';margin-right:10px;color:#c7a849}
+body .reference-footer .copyright{width:min(525px,90vw);margin:27px 0 0;padding:29px 0 0;border:0;border-top:1px solid #454242;color:#ddd;font-size:12px}
+@media(max-width:640px){body .reference-footer{padding:48px 6% 18px}body .reference-footer .brand-logo{width:195px}body .reference-footer h2{font-size:24px}body .reference-footer>p{font-size:13px}body .reference-footer>p br{display:none}body .reference-footer nav{font-size:12px}body .reference-footer nav a{padding:6px 5px}body .reference-footer nav a+a::before{margin-right:5px}body .reference-footer .copyright{font-size:11px}}
+body.portfolio-screen .reference-footer{padding:58px 7% 20px}
+body.portfolio-screen .reference-footer .brand-logo{width:220px;max-height:56px}
+body.portfolio-screen .reference-footer h2{margin-bottom:22px;font:700 30px/1.15 'Montserrat',Arial,sans-serif}
+body.portfolio-screen .reference-footer>p{margin-bottom:28px;font-size:14px;color:#eee}
+body.portfolio-screen .reference-footer nav{gap:0;font-size:13px}
+body.portfolio-screen .reference-footer .copyright{width:min(525px,90vw);margin:27px 0 0;font-size:12px}
+@media(max-width:640px){body.portfolio-screen .reference-footer{padding:48px 6% 18px}body.portfolio-screen .reference-footer .brand-logo{width:195px;max-height:56px}body.portfolio-screen .reference-footer h2{font-size:24px}body.portfolio-screen .reference-footer>p{font-size:13px}body.portfolio-screen .reference-footer nav{font-size:12px}body.portfolio-screen .reference-footer .copyright{width:min(525px,90vw);margin-top:27px;font-size:11px}}
+
+/* Add the reference spacing between the contact map and footer. */
+body.contact-screen .contact-map{margin-bottom:120px}
+@media(max-width:640px){body.contact-screen .contact-map{margin-bottom:80px}}
+
+
+/* Enlarge only the Giuseppes logo in the shared footer on all five pages. */
+body .reference-footer .brand-logo{width:280px;max-height:72px}
+@media(max-width:640px){body .reference-footer .brand-logo{width:240px;max-height:64px}}
+body.portfolio-screen .reference-footer .brand-logo{width:280px;max-height:72px}
+@media(max-width:640px){body.portfolio-screen .reference-footer .brand-logo{width:240px;max-height:64px}}
+
+/* Keep the logo-to-heading spacing consistent across all five footers. */
+body .reference-footer .brand-footer{margin-bottom:12px}
+body.portfolio-screen .reference-footer .brand-footer{margin-bottom:12px}
+
+
+/* Anchor target for the homepage service cards */
+.services-page #nossos-servicos{scroll-margin-top:110px}
+
+/* Keep the contact social buttons in the reference gold-and-white hover style. */
+.contact-screen .social-icon:hover,.contact-screen .social-icon:focus-visible{background:#8f8122;color:#fff;transform:translateY(-2px)}
+.contact-screen .contact-form button:hover,.contact-screen .contact-form button:focus-visible{background:#efddd2;color:#5f5a57!important;transform:none;box-shadow:none}
+.portfolio-screen .portfolio-intro .button-dark:hover,.portfolio-screen .portfolio-cta .button:hover,.portfolio-screen .header-cta:hover{background:#a88f33;color:#fff}
+body:not(.contact-screen) .button-dark:hover,body:not(.contact-screen) .services-booking-button:hover,body:not(.contact-screen) .home-contact-button:hover{background:#a88f33;color:#fff}
+body.home-screen .home-pricing-cta .button:hover,body.home-screen .home-contact .home-contact-booking:hover{background:#987f2e;color:#fff}
+
+/* Contact footer adjustments are limited to phone-sized screens. */
+.contact-screen .contact-footer-mobile-break{display:none}
+@media(max-width:640px){
+  .contact-screen .contact-footer-desktop-break{display:none}
+  .contact-screen br.contact-footer-mobile-break{display:block}
+  .contact-screen h2 .contact-footer-mobile-break{display:inline}
+  body.contact-screen .contact-map{margin-bottom:10px}
+  body.contact-screen .reference-footer{padding:38px 6% 18px}
+  body.contact-screen .reference-footer .brand-logo{width:195px;max-height:56px}
+  body.contact-screen .reference-footer .brand-footer{margin-bottom:18px}
+  body.contact-screen .reference-footer h2{max-width:350px;margin-bottom:16px;font-size:22px;line-height:1.18}
+  body.contact-screen .reference-footer>p{max-width:340px;margin-bottom:24px;font-size:13px;line-height:1.55}
+  body.contact-screen .reference-footer nav{max-width:320px;margin:0 auto;font-size:12px;line-height:1.4}
+  body.contact-screen .reference-footer nav a{padding:6px 5px}
+  body.contact-screen .reference-footer nav a+a::before{margin-right:5px}
+  body.contact-screen .reference-footer .copyright{margin-top:22px;padding-top:20px;font-size:11px}
+}
+
+/* Match the phone footer layout across the other four pages. */
+.phone-footer-mobile-break{display:none}
+@media(max-width:640px){
+  .phone-footer-desktop-break{display:none}
+  br.phone-footer-mobile-break{display:block}
+  h2 .phone-footer-mobile-break{display:inline}
+  body .reference-footer{padding:38px 6% 18px}
+  body .reference-footer .brand-logo{width:195px;max-height:56px}
+  body .reference-footer .brand-footer{margin-bottom:18px}
+  body .reference-footer h2{max-width:350px;margin-bottom:16px;font-size:22px;line-height:1.18}
+  body .reference-footer>p{max-width:340px;margin-bottom:24px;font-size:13px;line-height:1.55}
+  body .reference-footer nav{max-width:320px;margin:0 auto;font-size:12px;line-height:1.4}
+  body .reference-footer nav a{padding:6px 5px}
+  body .reference-footer nav a+a::before{margin-right:5px}
+  body .reference-footer .copyright{margin-top:22px;padding-top:20px;font-size:11px}
+}
+@media(max-width:640px){
+  html body:is(.home-screen,.services-page,.portfolio-screen,.about-screen) .reference-footer{padding:38px 6% 18px}
+  html body:is(.home-screen,.services-page,.portfolio-screen,.about-screen) .reference-footer .brand-logo{width:195px;max-height:56px}
+  html body:is(.home-screen,.services-page,.portfolio-screen,.about-screen) .reference-footer .brand-footer{margin-bottom:18px}
+  html body:is(.home-screen,.services-page,.portfolio-screen,.about-screen) .reference-footer h2{max-width:350px;margin-bottom:16px;font-size:22px;line-height:1.18}
+  html body:is(.home-screen,.services-page,.portfolio-screen,.about-screen) .reference-footer>p{max-width:340px;margin-bottom:24px;font-size:13px;line-height:1.55}
+  html body:is(.home-screen,.services-page,.portfolio-screen,.about-screen) .reference-footer nav{max-width:320px;margin:0 auto;font-size:12px;line-height:1.4}
+  html body:is(.home-screen,.services-page,.portfolio-screen,.about-screen) .reference-footer nav a{padding:6px 5px}
+  html body:is(.home-screen,.services-page,.portfolio-screen,.about-screen) .reference-footer nav a+a::before{margin-right:5px}
+  html body:is(.home-screen,.services-page,.portfolio-screen,.about-screen) .reference-footer .copyright{margin-top:22px;padding-top:20px;font-size:11px}
+}
+@media(max-width:640px){
+  body .reference-footer nav a:first-child::before{content:'•';margin-right:5px;color:#c7a849}
+}
+@media(max-width:640px){
+  body .reference-footer nav a::before{font-size:17px;font-weight:800;line-height:0;vertical-align:-1px}
+}
+@media(max-width:640px){
+  html body.portfolio-screen .reference-footer .copyright{display:block;width:min(525px,90vw);grid-template:none;grid-template-columns:none;grid-template-rows:none;justify-content:initial;justify-items:initial;align-items:initial;row-gap:0;margin:22px 0 0;padding:20px 0 0;border:0;border-top:1px solid #454242;white-space:normal;text-align:center;font-size:11px}
+  html body.portfolio-screen .reference-footer .copyright::before,
+  html body.portfolio-screen .reference-footer .copyright::after{display:none;content:none}
+  html body:is(.home-screen,.services-page,.portfolio-screen,.about-screen) .reference-footer>p br.phone-footer-mobile-break{display:block}
+}
+@media(max-width:640px){
+  html body:is(.home-screen,.services-page,.portfolio-screen) .mobile-booking{display:none!important}
+}
+@media(max-width:640px){
+  body .menu-toggle{gap:5px}
+  body .menu-toggle::after{content:'';display:block;width:23px;height:1px;background:#fff;transition:background-color .18s}
+  body .menu-toggle[aria-expanded='true']::after{display:none}
+  body .menu-toggle:hover span,body .menu-toggle:focus-visible span,
+  body .menu-toggle:hover::after,body .menu-toggle:focus-visible::after{background:#c7a849}
+}
+@media(max-width:640px){
+  html body .whatsapp-widget .whatsapp-float,
+  html body .whatsapp-widget .portfolio-whatsapp-float{right:16px;bottom:16px;width:54px;height:54px;box-sizing:border-box}
+  html body .whatsapp-widget .whatsapp-float svg,
+  html body .whatsapp-widget .portfolio-whatsapp-float svg{width:31px;height:31px}
+  html body .portfolio-whatsapp-widget{right:16px;bottom:16px}
+}
+
+@media(max-width:640px){
+  body.portfolio-screen .portfolio-copy h1{font-size:26px!important;line-height:1.12!important;letter-spacing:-.025em!important}
+}
+.portfolio-cta-mobile-break{display:none}
+@media (min-width:641px) and (max-width:1100px){
+  body:is(.home-screen,.services-page) .reviews-progress{position:relative;width:150px;height:3px;margin:28px auto 0;border-radius:3px;background:#c9c9c9}
+  body:is(.home-screen,.services-page) .reviews-progress span{position:absolute;left:42%;top:0;width:16%;height:3px;border-radius:3px;background:#666}
+  body.services-page .testimonials-layout{grid-template-columns:minmax(0,1fr);gap:24px;margin-top:36px}
+  body.services-page .google-review-summary{flex-direction:row;flex-wrap:wrap;justify-content:center;gap:8px 18px}
+}
+@media(max-width:640px){
+  body:is(.home-screen,.services-page) .testimonials-heading h2 .testimonial-title-break{display:block}
+  body:is(.home-screen,.services-page) .reviews-progress{position:relative;width:150px;height:3px;margin:28px auto 0;border-radius:3px;background:#c9c9c9}
+  body:is(.home-screen,.services-page) .reviews-progress span{position:absolute;left:42%;top:0;width:16%;height:3px;border-radius:3px;background:#666}
+  body.services-page .services-overview-copy{text-align:center!important}
+  body.services-page .services-overview-copy h1{margin-left:auto!important;margin-right:auto!important}
+  body.services-page .services-overview-copy>p:not(.eyebrow){text-align:center!important}
+  body.services-page .services-overview-rule{margin-left:auto!important;margin-right:auto!important}
+  body.services-page .services-overview{padding-bottom:20px!important}
+  body.services-page .services.section-pad{padding-top:24px!important}
+  body.portfolio-screen .portfolio-intro{padding-bottom:14px!important}
+  body.portfolio-screen .work.section-pad{padding-top:18px!important;padding-bottom:8px!important}
+  body.portfolio-screen .portfolio-cta h2{font-size:28px!important;line-height:1.12!important}
+  body.portfolio-screen .portfolio-cta .portfolio-cta-mobile-break{display:block}
+  body.portfolio-screen .portfolio-cta .portfolio-cta-desktop-break{display:none}
+  body.portfolio-screen .portfolio-intro .portfolio-copy .button{
+    display:block!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-height:66px!important;
+    box-sizing:border-box!important;
+    position:relative!important;
+    padding:12px 18px!important;
+    font-size:16px!important;
+    font-weight:700!important;
+    line-height:1.35!important;
+    text-align:center!important;
+  }
+  body.portfolio-screen .portfolio-intro .portfolio-copy .button span{position:static!important;display:inline-flex!important;vertical-align:middle!important;margin-left:-8px!important;transform:none!important;flex:0 0 24px!important;width:24px!important;height:24px!important}
+  body.portfolio-screen .portfolio-intro .portfolio-copy .button svg{width:24px!important;height:24px!important}
+  body.portfolio-screen .portfolio-cta .button{
+    display:flex!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-height:66px!important;
+    box-sizing:border-box!important;
+    position:relative!important;
+    justify-content:center!important;
+    padding:12px 18px!important;
+    gap:12px!important;
+    font-size:16px!important;
+    font-weight:700!important;
+    line-height:1.35!important;
+    text-align:center!important;
+  }
+  body.portfolio-screen .portfolio-cta .button .portfolio-cta-button-label{position:static!important;display:inline-block!important;width:auto!important;height:auto!important;flex:0 1 auto!important;transform:none!important}
+  body.portfolio-screen .portfolio-cta .button .portfolio-cta-button-label span{position:static!important;display:inline-flex!important;vertical-align:middle!important;margin-left:2px!important;width:24px!important;height:24px!important;flex:0 0 24px!important;transform:none!important}
+  body.portfolio-screen .portfolio-cta .button svg{width:24px!important;height:24px!important}
+  body.portfolio-screen .portfolio-cta .button svg path:first-child{stroke-width:2.2!important}
+  body.portfolio-screen .portfolio-cta{
+    min-height:390px!important;
+    margin-top:25px!important;
+    padding:42px 7%!important;
+    background-image:linear-gradient(rgba(30,28,27,.42),rgba(30,28,27,.42)),url('portfolio-cta-woman-banner-v2.jpg')!important;
+    background-size:cover,cover!important;
+    background-position:center,92% center!important;
+    background-repeat:no-repeat!important;
+    background-color:#282624!important;
+  }
+}
+@media(min-width:641px){body:is(.home-screen,.services-page) .testimonials-heading h2 .testimonial-title-break{display:none}}
+@media(max-width:640px){
+  html body:is(.home-screen,.services-page,.portfolio-screen,.about-screen,.contact-screen) .whatsapp-widget,
+  html body:is(.home-screen,.services-page,.portfolio-screen) .portfolio-whatsapp-widget{position:fixed!important;right:16px!important;bottom:16px!important;z-index:30!important;display:block!important}
+  html body:is(.home-screen,.services-page,.portfolio-screen,.about-screen,.contact-screen) .whatsapp-widget .whatsapp-float,
+  html body:is(.home-screen,.services-page,.portfolio-screen) .portfolio-whatsapp-widget .portfolio-whatsapp-float{position:static!important;right:auto!important;bottom:auto!important;width:54px!important;height:54px!important}
+  html body:is(.home-screen,.services-page,.portfolio-screen,.about-screen,.contact-screen) .whatsapp-widget .whatsapp-float svg,
+  html body:is(.home-screen,.services-page,.portfolio-screen) .portfolio-whatsapp-widget .portfolio-whatsapp-float svg{width:31px!important;height:31px!important}
+}
+
+/* Keep the portfolio call-to-action balanced on tablets in either orientation. */
+@media (min-width: 641px) and (max-width: 1100px) {
+  body.portfolio-screen .portfolio-cta {
+    box-sizing: border-box;
+    min-height: clamp(470px, 58vh, 560px);
+    padding: clamp(44px, 6vw, 64px) clamp(38px, 7vw, 72px);
+    background-color: #302c2c;
+    background-image: linear-gradient(90deg, rgba(30, 28, 27, .84) 0%, rgba(30, 28, 27, .78) 46%, rgba(30, 28, 27, .54) 100%), url('portfolio-cta-woman.jpg');
+    background-size: cover;
+    background-position: center, 54% center;
+    background-repeat: no-repeat;
+  }
+  body.portfolio-screen .portfolio-cta br {
+    display: none;
+  }
+  body.portfolio-screen .portfolio-cta .eyebrow {
+    max-width: 560px;
+    font-size: clamp(16px, 1.8vw, 18px);
+    line-height: 1.4;
+  }
+  body.portfolio-screen .portfolio-cta h2 {
+    max-width: 680px;
+    font-size: clamp(34px, 4vw, 42px);
+    line-height: 1.14;
+    letter-spacing: -.025em;
+  }
+  body.portfolio-screen .portfolio-cta > p:not(.eyebrow) {
+    max-width: 580px;
+    font-size: clamp(16px, 1.8vw, 18px);
+  }
+  body.portfolio-screen .portfolio-cta .button {
+    max-width: min(100%, 440px);
+    box-sizing: border-box;
+    background-color: #b69a39;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.3;
+  }
+  body.portfolio-screen .portfolio-cta .portfolio-cta-button-label > span[aria-hidden="true"] {
+    position: relative;
+    left: 5px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1100px) and (orientation: landscape) {
+  body.portfolio-screen .portfolio-cta {
+    min-height: clamp(420px, 62vh, 490px);
+    padding: 48px clamp(54px, 6.5vw, 72px);
+    background-position: center, 54% 45%;
+  }
+  body.portfolio-screen .portfolio-cta h2 {
+    max-width: 620px;
+    font-size: clamp(36px, 3.7vw, 40px);
+  }
+  body.portfolio-screen .portfolio-cta > p:not(.eyebrow) {
+    max-width: 560px;
+  }
+}
+
+@media(min-width:641px){body .reference-footer nav a::before{content:""!important;display:inline-block;width:6px;height:6px;margin-right:9px;border-radius:50%;background:#c7a849;vertical-align:middle}}
+@media (min-width: 641px) and (max-width: 1100px) {
+  body .site-header .menu-toggle span,
+  body .site-header .menu-toggle::after {
+    transition: transform .18s, opacity .18s, background-color .18s;
+  }
+  body .site-header .menu-toggle::after {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 2px;
+    background: #fff;
+  }
+  body .site-header .menu-toggle:hover span,
+  body .site-header .menu-toggle:focus-visible span,
+  body .site-header .menu-toggle:hover::after,
+  body .site-header .menu-toggle:focus-visible::after {
+    background: #c7a849;
+  }
+  body .site-header .menu-toggle[aria-expanded="true"] span:first-child {
+    transform: translateY(8px) rotate(45deg);
+    background: #c7a849;
+  }
+  body .site-header .menu-toggle[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+  }
+  body .site-header .menu-toggle[aria-expanded="true"]::after {
+    transform: translateY(-8px) rotate(-45deg);
+    background: #c7a849;
+  }
+  body .site-header .navigation {
+    padding: 6px 5% 10px;
+  }
+  body .site-header .navigation a {
+    padding: 8px 0;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  body .site-header .navigation a[aria-current="page"] {
+    background: #b99b42;
+    color: #fff;
+    border-radius: 9px;
+  }
+  body.contact-screen .contact-page {
+    grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+    gap: 28px;
+    padding: 54px 4% 70px;
+  }
+  body.contact-screen .contact-info {
+    display: block;
+    min-width: 0;
+  }
+  body.contact-screen .contact-intro h1 {
+    font-size: clamp(30px, 4.4vw, 36px);
+  }
+  body.contact-screen .contact-intro > p:last-child {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  body.contact-screen .contact-info article {
+    gap: 14px;
+    padding: 18px 2px;
+  }
+  body.contact-screen .contact-info article .service-icon {
+    flex-basis: 40px;
+    width: 40px;
+    height: 40px;
+  }
+  body.contact-screen .contact-form {
+    min-width: 0;
+    padding: 30px 28px;
+  }
+  body.contact-screen .contact-form h2 {
+    font-size: clamp(30px, 4.2vw, 38px);
+    line-height: 1.12;
+  }
+  body.contact-screen .contact-form > p:not(.eyebrow) {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}

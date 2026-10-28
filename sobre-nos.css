@@ -1,0 +1,280 @@
+/* Styles for the Sobre Nós page only. */
+.about-screen .about-intro{max-width:none;margin:0;padding:105px 3.2% 82px;text-align:left;background:none}
+.about-screen .about-intro .eyebrow{margin:0 0 20px;color:#b6a52d;font-size:16px;font-style:italic;text-transform:none;letter-spacing:0}
+.about-screen .about-intro h1{max-width:500px;margin:0 0 20px;font-size:clamp(34px,3.2vw,40px);line-height:1.14}
+.about-screen .about-title-break{display:none}
+.about-screen .about-copy{max-width:465px}
+.about-screen .about-copy p{margin:0 0 15px;font-size:15px;line-height:1.58;color:#363636}
+.about-screen .about-copy strong{font-weight:700}
+.about-screen .team .section-heading{display:block;max-width:800px;margin:0 auto 48px;text-align:center}
+.about-screen .team .section-heading .eyebrow{margin:0 0 7px}
+.about-screen .team .section-heading h2{margin:0 0 14px}
+.about-screen .team .section-heading>p:last-child{max-width:790px;margin:0 auto;font-size:15px;line-height:1.55}
+.about-screen .team{padding-left:1.3%;padding-right:1.3%}
+.about-screen .team-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;max-width:none}
+.about-screen .team-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;gap:0;padding:20px;border:1px solid rgba(182,165,45,.45);border-radius:20px;background:#faf9f4;box-shadow:none;overflow:hidden}
+.about-screen .team-photo{grid-column:1;grid-row:1;height:100%;min-height:420px;margin:0;border-radius:10px;background-size:cover;background-position:center 30%}
+.about-screen .team-bio{grid-column:2;grid-row:1;align-self:center;min-width:0;padding:4px 0 4px 28px}
+.about-screen .team-card:nth-child(even) .team-photo{grid-column:2;grid-row:1}
+.about-screen .team-card:nth-child(even) .team-bio{grid-column:1;grid-row:1;padding:4px 28px 4px 0}
+.about-screen .team-card .eyebrow{margin:0 0 12px;color:#b6a52d;font-size:11px;line-height:1.4;letter-spacing:.12em}
+.about-screen .team-card h3{margin:0 0 16px;font-size:27px;line-height:1.2}
+.about-screen .team-card .team-bio>p:not(.eyebrow){margin:0 0 14px;font-family:Georgia,serif;font-size:15px;line-height:1.58;color:#555}
+.about-screen .team-card .team-bio>a{display:inline-grid;place-items:center;width:38px;height:38px;margin-top:3px;border-radius:8px;background:#b6a52d;color:white;font-size:0}
+.about-screen .team-card .team-bio>a::after{content:"◎";font-family:Arial,sans-serif;font-size:21px;line-height:1}
+.about-screen .experts-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;max-width:none;margin:44px auto 0;padding-top:22px;border-top:1px solid rgba(182,165,45,.45)}
+.about-screen .team-card.expert-card{display:flex;flex-direction:column;gap:0;padding:18px}
+.about-screen .expert-card .team-photo{flex:none;width:100%;height:320px;min-height:0;margin:0 0 20px;border-radius:10px;background-position:center 28%}
+.about-screen .expert-card .team-bio,.about-screen .expert-card:nth-child(even) .team-bio{padding:0;align-self:stretch}
+.about-screen .expert-card:nth-child(even) .team-photo{order:0}
+@media(max-width:900px){.about-screen .about-intro{padding:78px 8% 64px}.about-screen .team{padding-left:4%;padding-right:4%}.about-screen .team-grid{grid-template-columns:1fr;gap:18px}.about-screen .team-card{max-width:760px;width:100%;margin:0 auto}.about-screen .team-photo{min-height:380px}}
+@media(max-width:900px){.about-screen .experts-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.about-screen .team-card.expert-card{max-width:none}.about-screen .expert-card .team-photo{height:300px}}
+@media(max-width:640px){.about-screen .about-intro{padding:66px 7% 54px}.about-screen .about-intro h1{font-size:28px;line-height:1.12;letter-spacing:-.035em}.about-screen .about-title-break{display:block}.about-screen .about-copy p{font-size:14px}.about-screen .team{padding:58px 7%}.about-screen .team .section-heading{margin-bottom:28px}.about-screen .team .section-heading h2{font-size:36px}.about-screen .team-card{grid-template-columns:1fr;padding:14px;border-radius:16px}.about-screen .team-photo,.about-screen .team-card:nth-child(even) .team-photo{grid-column:1;grid-row:1;height:280px;min-height:0}.about-screen .team-bio,.about-screen .team-card:nth-child(even) .team-bio{grid-column:1;grid-row:2;padding:22px 8px 8px}.about-screen .team-card h3{font-size:24px}.about-screen .team-card .team-bio>p:not(.eyebrow){font-size:14px}}
+@media(max-width:640px){.about-screen .experts-grid{grid-template-columns:1fr;margin-top:32px;padding-top:18px}.about-screen .team-card.expert-card{max-width:480px;width:100%;padding:14px}.about-screen .expert-card .team-photo{height:280px;margin-bottom:16px}.about-screen .expert-card .team-bio{padding:0}}
+.about-screen .navigation a:first-child{color:#fff}
+.about-screen .navigation a[href="sobre-nos.html"]{color:var(--accent)}
+.about-screen .about-intro{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);align-items:center;gap:5%;}
+.about-screen .about-intro-copy{min-width:0;transform:translateX(24px)}
+.about-screen .about-intro-photo{width:100%;height:clamp(390px,42vw,590px);border-radius:18px;background-size:contain;background-position:center;background-repeat:no-repeat;background-color:#f4f2ec}
+.about-screen .about-intro-photo{background-color:transparent}
+.about-screen .founder-grid .team-photo,.about-screen .expert-card .team-photo{background-size:contain;background-position:center;background-repeat:no-repeat;background-color:#f4f2ec}
+.about-screen .founder-grid .team-photo{height:auto;min-height:0;aspect-ratio:3/4}
+.about-screen .expert-card .team-photo{height:auto;min-height:0;aspect-ratio:3/4}
+@media(max-width:900px){.about-screen .about-intro{grid-template-columns:1fr;gap:30px}.about-screen .about-intro-photo{height:clamp(340px,70vw,520px)}.about-screen .founder-grid .team-photo{height:auto;min-height:0;aspect-ratio:3/4}.about-screen .expert-card .team-photo{height:auto}}
+@media(max-width:640px){.about-screen .about-intro-photo{height:340px}.about-screen .founder-grid .team-photo,.about-screen .expert-card .team-photo{height:auto;min-height:0;aspect-ratio:3/4}}
+@media(min-width:1101px){
+  body.about-screen .experts-grid>.expert-card:nth-child(2)>.team-photo,
+  body.about-screen .experts-grid>.expert-card:nth-child(3)>.team-photo{
+    background-size:cover;
+    background-position:center 28%;
+    border-radius:16px;
+    overflow:hidden;
+  }
+}
+.about-screen .about-intro{width:100%;max-width:1228px;margin:0 auto;padding:68px 30px 20px;grid-template-columns:minmax(0,.95fr) minmax(0,1fr);gap:8%;align-items:center}
+.about-screen .about-intro-copy{transform:none}
+.about-screen .about-copy{max-width:480px}
+.about-screen .about-intro-photo{width:100%;height:auto;aspect-ratio:3/4;border-radius:20px;background-size:cover;background-position:center;background-repeat:no-repeat;background-color:transparent}
+@media(max-width:900px){.about-screen .about-intro{width:auto;max-width:760px;margin:0 auto;padding:78px 8% 64px;grid-template-columns:1fr;gap:30px}.about-screen .about-intro-copy{transform:none}.about-screen .about-intro-photo{width:100%;max-width:560px;height:auto;aspect-ratio:3/4;justify-self:center}}
+@media(max-width:640px){.about-screen .about-intro{padding:66px 7% 54px}.about-screen .about-intro-photo{max-width:100%;height:auto;aspect-ratio:3/4}}
+
+/* Sobre Nós closing call-to-action and footer */
+.about-screen .page-cta{position:relative;isolation:isolate;min-height:410px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:70px 8%;text-align:center;color:#fff;background:linear-gradient(rgba(25,22,22,.78),rgba(25,22,22,.78)),url('https://giuseppeshairstudio.com.br/wp-content/uploads/2024/11/salao-giuseppes.jpg') center/cover no-repeat}
+.about-screen .page-cta h2{max-width:1000px;margin:0 auto 20px;font-size:clamp(30px,3vw,40px);line-height:1.15;color:#fff}
+.about-screen .page-cta>p:not(.eyebrow){max-width:1000px;margin:0 auto 30px;color:#fff;font-size:17px;line-height:1.6}
+.about-screen .page-cta .button{min-height:48px;padding:13px 18px;border-radius:10px;background:#b9963e;color:#fff;font-size:16px;font-weight:600;box-shadow:0 4px 12px #0004}
+.about-screen .page-cta .button:hover{background:#a98430}
+.about-screen .page-cta .button span{display:inline-flex;align-items:center;justify-content:center;padding-left:10px;font-size:22px;font-weight:700;line-height:1;color:#fff}
+.about-screen .footer{display:flex;flex-direction:column;align-items:center;gap:20px;padding:68px 8% 36px;background:#231f20;color:#fff;text-align:center}
+.about-screen .footer .brand-footer{justify-content:center}
+.about-screen .footer .brand-logo{width:230px;max-height:55px}
+.about-screen .footer .footer-message{max-width:620px;margin:8px 0 0;font-size:30px;line-height:1.15;font-weight:700;color:#fff}
+.about-screen .footer .footer-support{max-width:550px;margin:0;color:#eee;font-size:15px;line-height:1.6}
+.about-screen .footer>div{justify-content:center;flex-wrap:wrap;gap:12px 16px;margin:16px 0 20px;font-size:14px}
+.about-screen .footer>div a::before{content:'•';margin-right:7px;color:#b9963e}
+.about-screen .copyright{width:min(630px,100%);margin:0;padding-top:20px;border-top:1px solid #666;text-align:center;font-size:10px;color:#bdb8b3}
+@media(max-width:640px){.about-screen .page-cta{min-height:360px;padding:58px 7%}.about-screen .page-cta h2{font-size:30px}.about-screen .page-cta>p:not(.eyebrow){font-size:15px}.about-screen .footer{padding:54px 7% 28px}.about-screen .footer .brand-logo{width:205px}.about-screen .footer .footer-message{font-size:26px}.about-screen .footer>div{font-size:12px}}
+
+/* Header booking button recommendation, scoped to Sobre Nós */
+
+/* Hover changes only the team card text; photos and layout stay untouched. */
+.about-screen .experts-grid .expert-card .team-bio h3,
+.about-screen .experts-grid .expert-card .team-bio .eyebrow,
+.about-screen .experts-grid .expert-card .team-bio>p:not(.eyebrow){transition:color .22s ease}
+.about-screen .experts-grid .expert-card:hover .team-bio h3,
+.about-screen .experts-grid .expert-card:hover .team-bio .eyebrow,
+.about-screen .experts-grid .expert-card:focus-within .team-bio h3,
+.about-screen .experts-grid .expert-card:focus-within .team-bio .eyebrow{color:#b9963e}
+.about-screen .experts-grid .expert-card:hover .team-bio>p:not(.eyebrow),
+.about-screen .experts-grid .expert-card:focus-within .team-bio>p:not(.eyebrow){color:#777}
+
+/* Reverse the card text hover: gold/gray at rest, original dark tones on hover. */
+.about-screen .experts-grid .expert-card .team-bio h3,
+.about-screen .experts-grid .expert-card .team-bio .eyebrow{color:#b9963e}
+.about-screen .experts-grid .expert-card .team-bio>p:not(.eyebrow){color:#777}
+.about-screen .experts-grid .expert-card:hover .team-bio h3,
+.about-screen .experts-grid .expert-card:hover .team-bio .eyebrow,
+.about-screen .experts-grid .expert-card:focus-within .team-bio h3,
+.about-screen .experts-grid .expert-card:focus-within .team-bio .eyebrow{color:#171515}
+.about-screen .experts-grid .expert-card:hover .team-bio>p:not(.eyebrow),
+.about-screen .experts-grid .expert-card:focus-within .team-bio>p:not(.eyebrow){color:#555}
+
+/* Highlight the Instagram icon only when the icon itself is hovered or focused. */
+.about-screen .experts-grid .expert-card .team-bio>a{width:32px;height:32px;margin-top:3px;display:inline-grid;place-items:center;border-radius:8px;background:transparent;color:#b9963e;font-size:0;transition:background-color .2s ease,color .2s ease}
+.about-screen .experts-grid .expert-card .team-bio>a::after{content:"";display:block;width:14px;height:14px;background:currentColor;-webkit-mask:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHJlY3QgeD0iMyIgeT0iMyIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiByeD0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iMTgiIGN5PSI2IiByPSIxLjIiIGZpbGw9ImJsYWNrIi8+PC9zdmc+") center/contain no-repeat;mask:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHJlY3QgeD0iMyIgeT0iMyIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiByeD0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iMTgiIGN5PSI2IiByPSIxLjIiIGZpbGw9ImJsYWNrIi8+PC9zdmc+") center/contain no-repeat;transition:background-color .2s ease}
+.about-screen .experts-grid .expert-card .team-bio>a:hover,
+.about-screen .experts-grid .expert-card .team-bio>a:focus-visible{background:#b6a52d;color:#fff}
+
+/* Keep the existing Instagram tile colors and replace the placeholder mark with the Instagram logo. */
+.about-screen .team-card .team-bio>a::after{content:"";display:block;width:18px;height:18px;background:currentColor;-webkit-mask:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHJlY3QgeD0iMyIgeT0iMyIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiByeD0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iMTgiIGN5PSI2IiByPSIxLjIiIGZpbGw9ImJsYWNrIi8+PC9zdmc+") center/contain no-repeat;mask:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHJlY3QgeD0iMyIgeT0iMyIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiByeD0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iMTgiIGN5PSI2IiByPSIxLjIiIGZpbGw9ImJsYWNrIi8+PC9zdmc+") center/contain no-repeat}
+
+/* Match the enlarged shared footer logo on the Sobre Nós page. */
+.about-screen .footer .brand-logo{width:280px;max-height:72px}
+@media(max-width:640px){.about-screen .footer .brand-logo{width:240px;max-height:64px}}
+.about-screen .reference-footer .brand-footer{width:max-content;margin-left:auto!important;margin-right:auto!important;transform:none!important}
+.about-screen .reference-footer .brand-logo{display:block;width:280px!important;max-width:none;height:auto;max-height:72px;object-fit:contain}
+@media(max-width:640px){.about-screen .reference-footer .brand-logo{width:240px!important;max-height:64px}}
+.about-screen .reference-footer .brand-footer{margin-bottom:12px!important}
+
+/* Match the Sobre Nós footer exactly to the Portfolio footer. */
+body.about-screen .reference-footer{display:flex;flex-direction:column;align-items:center;gap:0;padding:58px 7% 20px;background:#211e1e;color:#fff;text-align:center}
+body.about-screen .reference-footer .brand-footer{display:flex;width:auto;height:auto;align-items:center;justify-content:center;margin:0 auto 12px!important;transform:none!important}
+body.about-screen .reference-footer .brand-logo{display:block;width:280px!important;height:auto;max-width:none;max-height:72px;object-fit:contain}
+body.about-screen .reference-footer h2{max-width:820px;margin:0 0 22px;color:#fff;font:700 30px/1.15 'Montserrat',Arial,sans-serif}
+body.about-screen .reference-footer>p{margin:0 0 28px;color:#eee;font-size:14px;line-height:1.55}
+body.about-screen .reference-footer nav{display:flex;justify-content:center;flex-wrap:wrap;gap:0;color:#eee;font-size:13px}
+body.about-screen .reference-footer nav a{padding:7px 10px;white-space:nowrap}
+body.about-screen .reference-footer nav a+a::before{content:'•';margin-right:10px;color:#c7a849}
+body.about-screen .reference-footer .copyright{width:min(525px,90vw);margin:27px 0 0;padding:29px 0 0;border:0;border-top:1px solid #454242;color:#ddd;font-size:12px}
+@media(max-width:640px){body.about-screen .reference-footer{padding:48px 6% 18px}body.about-screen .reference-footer .brand-logo{width:240px!important;max-height:64px}body.about-screen .reference-footer h2{font-size:24px}body.about-screen .reference-footer>p{font-size:13px}body.about-screen .reference-footer>p br{display:none}body.about-screen .reference-footer nav{font-size:12px}body.about-screen .reference-footer nav a{padding:6px 5px}body.about-screen .reference-footer nav a+a::before{margin-right:5px}body.about-screen .reference-footer .copyright{font-size:11px}}
+
+@media(max-width:640px){
+  body.about-screen .reference-footer>.brand-footer{
+    display:flex!important;
+    width:max-content!important;
+    margin:0 auto 18px!important;
+    justify-content:center!important;
+  }
+  body.about-screen .reference-footer>.brand-footer .brand-logo{position:relative;left:26px}
+}
+
+/* Fill each phone-sized team portrait frame with the photo itself. */
+@media(max-width:640px){
+  body.about-screen .team-card .team-photo{
+    background-size:cover!important;
+    background-position:center 28%!important;
+    background-repeat:no-repeat!important;
+  }
+  body.about-screen .founder-grid>.team-card:nth-child(2) .team-photo,
+  body.about-screen .experts-grid>.expert-card:nth-child(2) .team-photo{
+    flex:none!important;
+    width:100%!important;
+    height:auto!important;
+    aspect-ratio:3/4!important;
+  }
+}
+
+
+/* Darken team card text while the pointer is over a card. */
+.about-screen .team-card:hover .team-bio>p:not(.eyebrow),
+.about-screen .team-card:focus-within .team-bio>p:not(.eyebrow){color:#222}
+.about-screen .team-card:hover .team-bio h3,
+.about-screen .team-card:focus-within .team-bio h3{color:#111}
+
+/* Center the About intro copy on tablets in both orientations. */
+@media (min-width: 641px) and (max-width: 1100px) {
+  body.about-screen .about-intro-copy {
+    width: 100%;
+    margin-inline: auto;
+    text-align: center;
+  }
+  body.about-screen .about-intro h1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body.about-screen .about-copy {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Anchor the founder Instagram icons to opposite lower card corners on tablets. */
+@media (min-width: 641px) and (max-width: 1100px) {
+  body.about-screen .founder-grid > .team-card {
+    position: relative;
+  }
+  body.about-screen .founder-grid > .team-card > .team-photo {
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  body.about-screen .founder-grid > .team-card:first-child > .team-photo {
+    background-position: center 42%;
+    align-self: start;
+    height: auto;
+    aspect-ratio: 7 / 10;
+    border-radius: 16px;
+  }
+  body.about-screen .founder-grid > .team-card:nth-child(2) > .team-photo {
+    align-self: start;
+    margin-bottom: 56px;
+  }
+  body.about-screen .founder-grid > .team-card > .team-bio > a {
+    position: absolute;
+    bottom: 18px;
+    margin: 0;
+  }
+  body.about-screen .founder-grid > .team-card:first-child > .team-bio > a {
+    left: 18px;
+    right: auto;
+  }
+  body.about-screen .founder-grid > .team-card:nth-child(2) > .team-bio > a {
+    left: auto;
+    right: 18px;
+  }
+}
+
+/* Round the contained second expert portrait without changing its frame size. */
+@media (min-width: 641px) and (max-width: 1100px) {
+  body.about-screen .experts-grid > .expert-card:nth-child(2) > .team-photo {
+    background-size: cover;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+}
+
+/* Center Pedro's final card in the tablet expert grid. */
+@media (min-width: 641px) and (max-width: 1100px) {
+  body.about-screen .experts-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  body.about-screen .experts-grid > .expert-card:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc((100% - 18px) / 2);
+  }
+  body.about-screen .experts-grid > .expert-card:last-child > .team-photo {
+    background-size: cover;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+}
+
+/* Give founder biographies room on landscape tablets. */
+@media (min-width: 901px) and (max-width: 1100px) and (orientation: landscape) {
+  body.about-screen .founder-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  body.about-screen .founder-grid > .team-card {
+    grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+  }
+  body.about-screen .founder-grid > .team-card:first-child {
+    grid-template-columns: minmax(0, 0.66fr) minmax(0, 1.34fr);
+  }
+  body.about-screen .founder-grid > .team-card:nth-child(2) {
+    grid-template-columns: minmax(0, 1.34fr) minmax(0, 0.66fr);
+  }
+  body.about-screen .founder-grid > .team-card > .team-photo {
+    height: 420px;
+    min-height: 0;
+    aspect-ratio: auto;
+    margin-bottom: 56px;
+    border-radius: 16px;
+    align-self: start;
+  }
+  body.about-screen .founder-grid > .team-card:first-child > .team-photo,
+  body.about-screen .founder-grid > .team-card:nth-child(2) > .team-photo {
+    height: 420px;
+    min-height: 0;
+    aspect-ratio: auto;
+    margin-bottom: 56px;
+    align-self: start;
+  }
+  body.about-screen .founder-grid > .team-card > .team-photo {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+  }
+}
